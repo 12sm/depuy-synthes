@@ -24,7 +24,7 @@
 
     <nav class="banner navbar navbar-default navbar-fixed-top" role="banner">
       <div id="navy" class="container">
-        <a id="navbrand" href="http://google.com">
+        <a class="navbar-brand" href="http://google.com">
           <div id="nav-logo">
           </div>
         </a>
@@ -35,9 +35,16 @@
         </button>
         <div class="collapse navbar-collapse" role="navigation">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Ambassadors</a></li>
-            <li><a href="#">Share Your Story</a></li>
-            <li><a href="#">Search Field</a></li>
+            <li><a href="#" id="ambassadors-nav-link">Ambassadors</a></li>
+            <li><a href="#" id="story-nav-link">Tell Us Your Story</a></li>
+            <li>
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group input-group">
+                  <span class="input-group-addon"><img src="./images/pool/Search.png" /></span>
+                  <input type="text" class="form-control" placeholder="Search">
+                </div>
+              </form>
+            </li>
           </ul>
         </div>
       </div>
