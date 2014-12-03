@@ -1,9 +1,8 @@
 /* ==========================================================================
 Base
 ========================================================================== */
-
 body {
-  background-color: yellow;
+  background-color: white;
   padding-top: 70px;
 }
 
@@ -21,16 +20,24 @@ h6 {}
 
 p {}
 
+.container-fluid {
+  width: 100% !important;
+}
+
+.nopad {
+  padding: 0 !important;
+}
+
+.nomar {
+  margin: 0 !important;
+}
+
 /* ==========================================================================
 Navbar
 ========================================================================== */
-nav {
-}
-
-#navbrand {
-}
-
 .navbar-collapse.collapse {
+  display: block !important;
+  float: right;
 }
 
 #nav-logo {
@@ -46,10 +53,7 @@ nav {
 .navbar-toggle {
   padding: 15px 15px !important;
   margin: 12px 0 !important;
-  display: inline-block !important;
 }
-
-
 
 /* ==========================================================================
 Footer
@@ -63,10 +67,17 @@ Footer
 /* ==========================================================================
 Homepage
 ========================================================================== */
+/*-------- SLIDER BEGIN--------*/
+.slides > li > div {
+  width: 100% !important;
+  height: 400px !important;
+}
 
-
-
-
+.flexslider {
+  border: none !important;
+  height: 400px;
+}
+/*-------- SLIDER END--------*/
 
 /* ==========================================================================
 Headers
