@@ -21,7 +21,9 @@ h4 {}
 
 h5 {}
 
-h6 {}
+h6 {
+  font-size:13px;
+}
 
 p {}
 
@@ -235,10 +237,19 @@ Footer
   height: auto;
   clear:both;
   padding-top:20px;
+  color:#FFF;
+  font-size: 13px;
+  font-weight: 100;
 }
 
 #foottopnav {
   width: 100%;
+}
+
+ul#foottopnav li {
+  font-size: 13px;
+  color: #FFF;
+  letter-spacing: .4px;
 }
 
 #foottopnav > li {display: inline-block; white-space: nowrap; width: 100%;}
@@ -247,15 +258,31 @@ Footer
 #foottopnav > li > a > h6.nobullet:after {content: none;}
 
 #jpr {
-  color: #FFFFFF
+  color: #FFFFFF;
+  font-weight: bold;
+  letter-spacing: .4px;
 }
 
-.bot1, .bot {
+.bot {
   text-align: center;
-  background-color: white;
-  display: inline-block;
+  background-color: rgba(255,255,255,.25);
+  display: table;
+  color: #FFF;
+  list-style: none;
   padding: 0px 10px;
-  margin: 2px 3px;
+  margin: 8px 3px;
+  border-radius: 2px;
+  transition: background-color .1s ease;
+}
+
+.bot:hover {
+  background-color:rgba(255,255,255,1);
+  color:#0b3d60;
+  text-decoration:none;
+}
+
+footer p {
+  margin-top: 25px;
 }
 
 /* ==========================================================================
@@ -297,6 +324,13 @@ Homepage
 .slide_text {
   width:100%;
   padding:0px 60px 0px 80px;
+}
+
+.inner-shadow {
+  -webkit-box-shadow: inset 0 0 50px 0 rgba(96,23,92,.8);
+  box-shadow: inset 0 0 50px 0 rgba(96,23,92,.8);
+  z-index: 2;
+  position: relative;
 }
 
 /*-------- SLIDER END--------*/
@@ -420,7 +454,29 @@ Media Queries
     padding-top:70px;
   }
 
-  /*-------- SLIDER END--------*/
+  /*-------- SLIDER END --------*/
+
+  /* ------- FOOTER BEGIN -----*/
+
+  ul#foottopnav li {
+    font-size: 13px;
+    color: #FFF;
+    letter-spacing: .4px;
+    display: inline-block;
+    width:auto;
+  }
+
+  ul#foottopnav {list-style: none;}
+
+  #foottopnav > li > a > h6 {margin: 0px;}
+
+  #jpr {margin-bottom: 0px;}
+
+  .bot {display:inline-block;}
+
+  footer p {margin-top:10px;}
+
+  /* ------- FOOTER END -----*/
 
 }
 
@@ -492,7 +548,8 @@ Media Queries
     font-size:24px;
   }
 
-
   /*-------- SLIDER END--------*/
+
+  footer {padding-bottom:20px;}
 
 }
