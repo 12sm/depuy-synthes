@@ -248,7 +248,7 @@ Homepage
   font-weight: bold;
   font-size: 52px;
   color: #FFF;
-  line-height: 1;
+  line-height: 1.1;
   padding-top:30px;
 }
 
@@ -256,8 +256,8 @@ Homepage
   color: #FFF;
   font-size: 18px;
   font-weight: 200;
-  line-height: 1;
-  margin-top:10px;
+  line-height: 1.4;
+  margin-top:20px;
 }
 
 .slide_text {
@@ -377,10 +377,7 @@ Media Queries
   }
 
   .slide_byline {
-    color: #FFF;
     font-size: 18px;
-    font-weight: 200;
-    line-height: 1;
   }
 
   .slide_text {
@@ -447,6 +444,12 @@ Media Queries
     width:1170px;
     margin:0 auto!important;
     padding-top:100px;
+  }
+
+  .slide_byline {
+    line-height: 1.4;
+    margin-top:20px;
+    font-size:24px;
   }
 
 
