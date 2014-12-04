@@ -257,7 +257,7 @@ Homepage
 
 .slide_title {
   font-weight: bold;
-  font-size: 52px;
+  font-size: 32px;
   color: #FFF;
   line-height: 1.1;
   padding-top:30px;
@@ -405,6 +405,7 @@ Media Queries
 @media (min-width: 992px) {
 
   /*-------- SLIDER BEGIN--------*/
+
   .slides > li > div {
     width: 100% !important;
     height: 600px;
@@ -419,6 +420,7 @@ Media Queries
   .imgLiquidFill.imgLiquid.imgLiquid_bgSize.imgLiquid_ready {
     height: 600px!important;
   }
+
   /*-------- SLIDER END--------*/
 
 
