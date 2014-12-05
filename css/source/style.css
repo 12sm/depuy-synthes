@@ -5,6 +5,7 @@ Base
 body {
   text-rendering: optimizeLegibility;
   font-family: "Ariel", "Ariel Regular", "Helvetica", sans-serif;
+  background-color: #555555;
 }
 
 html, body {
@@ -70,6 +71,10 @@ p {}
 
 .nomar {
   margin: 0 !important;
+}
+
+.inBlock {
+  display: inline-block !important;
 }
 
 /* ==========================================================================
@@ -171,11 +176,6 @@ form.navbar-form .form-group.input-group {
 
 #navy {
   height: 100%;
-}
-
-#navy.container {
-  width: 100%;
-  padding:0px;
 }
 
 .navbar-toggle {
@@ -350,15 +350,34 @@ Home Page
 /* ==========================================================================
 Story Show Page
 ========================================================================== */
-.storyHeader {
-  display: inline-block;
-}
-
 .hero-unit {
   background-color: pink;
   border-radius: 10px;
 }
 
+#socialTop > li, #socialTop > li > h6 {
+  display: inline-block;
+}
+
+#socialTop {
+  display: none !important;
+}
+
+.storyHeader > h2 {
+  font-size: 40px;
+}
+
+#botSocials {
+  text-align: center;
+}
+
+#socialBot {
+  padding-left: 0 !important;
+}
+
+#socialBot, #socialBot > li, #socialBot > li > h6 {
+  display: inline-block;
+}
 
 /* ==========================================================================
 Slider
@@ -389,17 +408,11 @@ Media Queries
 /* Small devices 768px and up */
 @media (min-width: 768px) {
 
-  /*-------- NAVBAR BEGIN--------*/
-
+/*-------- NAVBAR BEGIN--------*/
   .navbar-default {
     height: 90px;
     border: none;
     z-index: 2;
-  }
-
-  #navy.container {
-    width: 100%;
-    padding: 0px 20px;
   }
 
   .navbar-brand {
@@ -432,10 +445,12 @@ Media Queries
   }
 
   .shadow-top {padding-top:100px;}
+/*-------- NAVBAR END --------*/
 
-  /*-------- NAVBAR END --------*/
 
-  /*-------- SLIDER BEGIN--------*/
+
+
+/*-------- SLIDER BEGIN--------*/
   .slides > li > div {
     width: 100% !important;
     height: 500px;
@@ -466,11 +481,12 @@ Media Queries
     padding:0px 80px;
     padding-top:70px;
   }
+/*-------- SLIDER END --------*/
 
-  /*-------- SLIDER END --------*/
 
-  /* ------- FOOTER BEGIN -----*/
 
+
+/* ------- FOOTER BEGIN -----*/
   ul#foottopnav li {
     font-size: 13px;
     color: #FFF;
@@ -488,8 +504,17 @@ Media Queries
   .bot {display:inline-block;}
 
   footer p {margin-top:10px;}
+/* ------- FOOTER END -----*/
 
-  /* ------- FOOTER END -----*/
+
+/*-------- Story Show --------*/
+  #socialTop {
+    display: inline-block !important;
+  }
+
+  #botSocials {
+    display: none !important;
+  }
 
 }
 
@@ -497,11 +522,9 @@ Media Queries
 @media (min-width: 992px) {
 
   /*-------- SLIDER BEGIN--------*/
-
   .slides > li > div {
     width: 100% !important;
     height: 600px;
-
   }
 
   .flexslider {
@@ -516,22 +539,17 @@ Media Queries
   .slide_title {
     font-size: 72px;
   }
-
-  /*-------- SLIDER END--------*/
-
+/*-------- SLIDER END--------*/
 
 }
+
 
 /* Large devices 1200px and up */
 @media (min-width: 1200px) {
 
-  /*-------- NAVBAR BEGIN--------*/
-
-  #navy.container {
-    width: 1170px;
+  .container {
+    max-width: 1170px !important;
   }
-
-  /*-------- NAVBAR END --------*/
 
   /*-------- SLIDER BEGIN--------*/
   .slides > li > div {
@@ -560,7 +578,6 @@ Media Queries
     margin-top:20px;
     font-size:24px;
   }
-
   /*-------- SLIDER END--------*/
 
   footer {padding-bottom:20px;}
