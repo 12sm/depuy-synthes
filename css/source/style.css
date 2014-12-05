@@ -53,18 +53,10 @@ p {}
   width: 100% !important;
 }
 
-.shadow-top {
-  -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,.7);
-  box-shadow: 0 0 50px 0 rgba(0,0,0,.7);
-  position: relative;
-  padding-top: 90px;
-  z-index: 1;
-}
-
 #wrap {
-  min-height: 100%;
+  min-height: 80%;
   background-color: white;
-  padding-top: 0px;
+  padding-top: 90px;
 }
 
 #main {
@@ -83,6 +75,10 @@ p {}
 /* ==========================================================================
 Navbar
 ========================================================================== */
+nav {
+  border-bottom: 1px solid black !important;
+}
+
 .navbar-collapse.collapse {
   display: block !important;
   float: right;
@@ -286,7 +282,7 @@ footer p {
 }
 
 /* ==========================================================================
-Homepage
+Home Page
 ========================================================================== */
 /*-------- SLIDER BEGIN--------*/
 .slides > li > div {
@@ -352,10 +348,16 @@ Homepage
 /*-------- SLIDER END--------*/
 
 /* ==========================================================================
-Headers
+Story Show Page
 ========================================================================== */
+.storyHeader {
+  display: inline-block;
+}
 
-
+.hero-unit {
+  background-color: pink;
+  border-radius: 10px;
+}
 
 
 /* ==========================================================================
@@ -387,15 +389,10 @@ Media Queries
 /* Small devices 768px and up */
 @media (min-width: 768px) {
 
-  #wrap {
-    padding-top: 0px;
-    position: relative;
-  }
-
   /*-------- NAVBAR BEGIN--------*/
 
   .navbar-default {
-    height: 100px;
+    height: 90px;
     border: none;
     z-index: 2;
   }
