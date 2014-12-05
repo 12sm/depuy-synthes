@@ -5,14 +5,20 @@ Base
 body {
   text-rendering: optimizeLegibility;
   font-family: "Ariel", "Ariel Regular", "Helvetica", sans-serif;
-  background-color: #555555;
+  font-size:16px;
+  color:#989898;
+  background-color: #f4f4f4;
 }
 
 html, body {
   height: 100%;
 }
 
-h1 {}
+h1 {
+  font-family: "Ariel", "Ariel Regular", "Helvetica", sans-serif;
+  font-size:30px;
+  color: #0B3D60;
+}
 
 h2 {}
 
@@ -26,7 +32,13 @@ h6 {
   font-size: 14px;
 }
 
-p {}
+.blue-accent {color:#0B3D60;}
+
+p {
+  font-family: "Ariel", "Ariel Regular", "Helvetica", sans-serif;
+  font-size:16px;
+  color:#989898;
+}
 
 .btn-primary {
   background: #FFF;
@@ -330,17 +342,17 @@ Home Page
 }
 
 .shadowT {
-  -moz-box-shadow:    inset 1px 50px 9px -6px rgba(96,23,92,.8);
-  -webkit-box-shadow: inset 1px 50px 9px -6px rgba(96,23,92,.8);
-  box-shadow:         inset 1px 50px 9px -6px rgba(96,23,92,.8);
+  -moz-box-shadow:    inset 1px 10px 20px -6px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset 1px 10px 20px -6px rgba(0,0,0,.5);
+  box-shadow:         inset 1px 10px 20px -6px rgba(0,0,0,.5);
   width: 100%;
   height: 100%;
 }
 
 .shadowB {
-  -moz-box-shadow:    inset 1px -50px 9px -6px rgba(96,23,92,.8);
-  -webkit-box-shadow: inset 1px -50px 9px -6px rgba(96,23,92,.8);
-  box-shadow:         inset 1px -50px 9px -6px rgba(96,23,92,.8);
+  -moz-box-shadow:    inset 1px -20px 20px -6px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset 1px -20px 20px -6px rgba(0,0,0,.5);
+  box-shadow:         inset 1px -20px 20px -6px rgba(0,0,0,.5);
   width: 100%;
   height: 100%;
 }
@@ -364,7 +376,23 @@ Story Show Page
 }
 
 .storyHeader > h2 {
-  font-size: 40px;
+  font-size: 18px;
+  font-weight: 100;
+  margin:0;
+}
+
+.storyHeader.text-left.inBlock {
+  width: 100%;
+}
+
+h2#sh2 {
+  color: #6A6A6A;
+  margin-top: 6px;
+}
+
+h2#sh1 {
+  color: #0b3d60;
+  margin-top:20px;
 }
 
 #botSocials {
@@ -377,6 +405,27 @@ Story Show Page
 
 #socialBot, #socialBot > li, #socialBot > li > h6 {
   display: inline-block;
+}
+
+ul#socialBot i,
+ul#socialTop i {
+  color: #0B3D60;
+  font-size: 25px;
+  margin-left: 10px;
+  transition:opacity .2s ease;
+}
+
+ul#socialBot i:hover,
+ul#socialTop i:hover {
+  opacity:.8;
+}
+
+ul#socialBot li,
+ul#socialTop li {
+  font-size:13px;
+  color:#989898;
+  font-weight:100;
+  letter-spacing:.4px;
 }
 
 /* ==========================================================================
@@ -507,14 +556,21 @@ Media Queries
 /* ------- FOOTER END -----*/
 
 
-/*-------- Story Show --------*/
+/*-------- Story Show Begin --------*/
   #socialTop {
     display: inline-block !important;
+    margin-top: 13px;
   }
 
   #botSocials {
     display: none !important;
   }
+
+  .storyHeader.text-left.inBlock {
+    width: auto;
+  }
+
+  /*-------- Story Show End --------*/
 
 }
 
@@ -540,6 +596,23 @@ Media Queries
     font-size: 72px;
   }
 /*-------- SLIDER END--------*/
+
+
+/*-------- Story Show Begin --------*/
+.storyHeader > h2 {
+  font-size: 28px;
+}
+
+.storyHeader.text-left.inBlock {
+  margin-top: 35px;
+}
+
+#socialTop {
+  margin-top: 59px;
+}
+
+/*-------- Story Show End --------*/
+
 
 }
 
