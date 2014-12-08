@@ -92,7 +92,7 @@ p {
 Navbar
 ========================================================================== */
 nav {
-  border-bottom: 1px solid black !important;
+  border-bottom: none;
 }
 
 .navbar-collapse.collapse {
@@ -461,7 +461,7 @@ Media Queries
 
 /*-------- NAVBAR BEGIN--------*/
   .navbar-default {
-    height: 90px;
+    height: 100px;
     border: none;
     z-index: 2;
   }
