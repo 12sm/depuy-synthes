@@ -357,18 +357,75 @@ Home Page
   width: 100%;
   height: 100%;
 }
-
 /*-------- SLIDER END--------*/
+
+
+
+
+
+/*-------- STORY CARD BEGIN --------*/
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card-photo {
+  border-radius: 55px;
+}
+
+.card-footer {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.hip-card-footer {
+  background-color: navy;
+}
+
+.knee-card-footer {
+  background-color: yellow;
+}
+
+.shoulder-card-footer {
+  background-color: red;
+}
+
+#card-quote {
+  height: 55px;
+}
+
+.ambassamore {
+  text-align: center;
+}
+
+.ambassamore > a {
+  background-color: grey;
+}
+/*-------- STORY CARD END --------*/
 
 /* ==========================================================================
 Story Show Page
 ========================================================================== */
-.hero-unit {
+.story-unit {
   background-color: #FFFFFF;
   border-radius: 10px;
   -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
   -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
   box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
+}
+
+.card-unit {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
+  box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
+}
+
+.hero-unit > div {
+  margin: 0 !important;
 }
 
 #socialTop > li, #socialTop > li > h6 {
