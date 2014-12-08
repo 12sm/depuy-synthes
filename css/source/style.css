@@ -40,6 +40,14 @@ p {
   color:#989898;
 }
 
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
 .btn-primary {
   background: #FFF;
   border-radius: 0px 7px 0px 7px;
@@ -367,33 +375,88 @@ Home Page
 hr {
   border: 0;
   height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
 .card-photo {
-  border-radius: 55px;
+  border-radius: 60px;
+  height: 110px;
+  width: 110px;
+  border: 7px solid #FFF;
+  position: relative;
+  top: -30px;
+  margin-bottom: -56px;
+  z-index: 2;
+}
+
+.card-line {
+  position: relative;
+  top: -10px;
+}
+
+.card-header {
+  padding: 10px 10px 0px 0px;
 }
 
 .card-footer {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  letter-spacing: .3px;
+}
+
+.card-footer h3 {
+  font-size: 14px;
+  color: #FFF;
+  margin: 15px 0px 15px 0px;
+}
+
+.card-footer a h5 {
+  font-size: 14px;
+  color: rgba(255,255,255,.5);
+  margin: 15px 0px 15px 0px;
+  text-decoration:none;
+  transition:color .3s ease;
+}
+
+.card-footer a h5:after {
+  content:"\203A";
+}
+
+.card-footer a:hover h5 {
+  text-decoration:none;
+  color:rgba(255,255,255,1);
 }
 
 .hip-card-footer {
-  background-color: navy;
+  background-color: #a39468;
 }
 
 .knee-card-footer {
-  background-color: yellow;
+  background-color: #0b3d60;
 }
 
 .shoulder-card-footer {
-  background-color: red;
+  background-color: #882828;
+}
+
+.card-unit h5 {
+  font-size: 20px;
+  color: #989898;
+  margin-bottom: 0px;
+}
+
+.card-unit h6 {
+  margin-top: 0px;
+  font-size: 12px;
+  color: #989898;
 }
 
 #card-quote {
   height: 55px;
+  font-size: 14px;
+  color: #989898;
+  letter-spacing: .2px;
 }
 
 .ambassamore {
@@ -419,9 +482,8 @@ Story Show Page
 .card-unit {
   background-color: #FFFFFF;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
-  box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
+  margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .hero-unit > div {
@@ -592,6 +654,37 @@ Media Queries
     padding-top:70px;
   }
 /*-------- SLIDER END --------*/
+
+
+
+
+
+/*-------- STORY CARD BEGIN --------*/
+
+.card-line {
+  top: -20px;
+}
+
+.card-unit h6 {
+  margin-top: 3px;
+  font-size: 9px;
+}
+
+hr {
+  margin-bottom: 5px;
+}
+
+#card-quote {
+  height: 80px;
+}
+
+.card-photo {
+  height: 90px;
+  width: 90px;
+}
+
+/*-------- STORY CARD END --------*/
+
 
 
 
