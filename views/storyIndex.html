@@ -1,167 +1,733 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Depuy Synthes</title>
-    <link rel="stylesheet" href="css/vendor/normalize.css">
-    <link rel="stylesheet" href="css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="css/source/style.css">
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/bootstrap.js"></script>
-    <script src="js/source/main.js"></script>
-  </head>
-  <body>
-    <nav class="banner navbar navbar-default navbar-fixed-top" role="banner">
-      <div id="navy" class="container">
-        <a class="navbar-brand" href="http://google.com">
-          <div id="nav-logo">
+<head>
+  <meta charset="utf-8">
+  <title>Depuy Synthes</title>
+  <link rel="stylesheet" href="../css/vendor/normalize.css">
+  <link rel="stylesheet" href="../css/vendor/bootstrap.css">
+  <link rel="stylesheet" href="../css/source/style.css">
+  <link rel="stylesheet" href="../css/vendor/font-awesome.min.css">
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/vendor/bootstrap.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk"></script>
+  <script src="../js/vendor/imgLiquid.js"></script>
+  <script src="../js/vendor/jquery.flexslider.js"></script>
+  <script src="../js/source/main.js"></script>
+</head>
+<body>
+  <nav class="banner navbar navbar-default navbar-fixed-top" role="banner">
+    <div id="navy" class="container">
+      <a class="navbar-brand" href="../index.html">
+        <div id="nav-logo">
+        </div>
+      </a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse" role="navigation">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#" id="ambassadors-nav-link">Ambassadors</a></li>
+          <li><a href="#" id="story-nav-link">Tell Us Your Story</a></li>
+          <li class="search ">
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group input-group">
+                <span class="input-group-addon"><img src="../images/pool/Search.png" /></span>
+                <input type="text" class="form-control" placeholder="Search">
+              </div>
+            </form>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="wrap">
+    <div id="main" class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 nopad">
+          <div class="hidden-xs" id="map-canvas">
           </div>
-        </a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="collapse navbar-collapse" role="navigation">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" id="ambassadors-nav-link">Ambassadors</a></li>
-            <li><a href="#" id="story-nav-link">Tell Us Your Story</a></li>
-            <li class="search hidden-xs">
-              <form class="navbar-form navbar-left" role="search">
-                <div class="form-group input-group">
-                  <span class="input-group-addon"><img src="./images/pool/Search.png" /></span>
-                  <input type="text" class="form-control" placeholder="Search">
+        </div>
+      </div>
+
+
+
+
+
+      <div class="row container">
+        <div class="col-xs-12">
+          <div class="row">
+            <div class="col-xs-12">
+              <h2>
+                Ambassadors :
+              </h2>
+              <h2>
+                All Joint Replacement Patients
+              </h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              Joint nav and dropdown
+            </div>
+          </div>
+
+
+
+
+
+
+          <div class="grid row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/bud.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Bud</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Brooklyn, NY</h6>
+                        <input class="hide zip" type="number" value="11225">
+                        <input class="hide state" type="text" value="NY">
+                      </div>
+                    </div>
+                  </div>
                 </div>
-              </form>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I never thought I would be able to hike again..."
+                    </p>
+                  </div>
+                </div>
+                <div class="hip-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Hip</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/sharon.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Sharon</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Escondido, CA</h6>
+                        <input class="hide zip" type="number" value="92025">
+                        <input class="hide state" type="text" value="CA">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "Dancing at my daughter's wedding meant more to me than words can express."
+                    </p>
+                  </div>
+                </div>
+                <div class="knee-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Knee</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/george.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">George</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Nashville, TN</h6>
+                        <input class="hide zip" type="number" value="37212">
+                        <input class="hide state" type="text" value="TN">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="shoulder-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Shoulder</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/harrold.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Harrold</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Cheyenne, WY</h6>
+                        <input class="hide zip" type="number" value="82001">
+                        <input class="hide state" type="text" value="WY">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="multiple-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Multiple Joints</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/bud.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Bud</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Brooklyn, NY</h6>
+                        <input class="hide zip" type="number" value="11225">
+                        <input class="hide state" type="text" value="NY">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I never thought I would be able to hike again..."
+                    </p>
+                  </div>
+                </div>
+                <div class="hip-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Hip</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/sharon.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Sharon</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Escondido, CA</h6>
+                        <input class="hide zip" type="number" value="92025">
+                        <input class="hide state" type="text" value="CA">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "Dancing at my daughter's wedding meant more to me than words can express."
+                    </p>
+                  </div>
+                </div>
+                <div class="knee-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Knee</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/george.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">George</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Nashville, TN</h6>
+                        <input class="hide zip" type="number" value="37212">
+                        <input class="hide state" type="text" value="TN">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="shoulder-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Shoulder</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/harrold.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Harrold</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Cheyenne, WY</h6>
+                        <input class="hide zip" type="number" value="82001">
+                        <input class="hide state" type="text" value="WY">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="multiple-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Multiple Joints</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/bud.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Bud</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Brooklyn, NY</h6>
+                        <input class="hide zip" type="number" value="11225">
+                        <input class="hide state" type="text" value="NY">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I never thought I would be able to hike again..."
+                    </p>
+                  </div>
+                </div>
+                <div class="hip-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Hip</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/sharon.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Sharon</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Escondido, CA</h6>
+                        <input class="hide zip" type="number" value="92025">
+                        <input class="hide state" type="text" value="CA">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "Dancing at my daughter's wedding meant more to me than words can express."
+                    </p>
+                  </div>
+                </div>
+                <div class="knee-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Knee</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/george.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">George</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Nashville, TN</h6>
+                        <input class="hide zip" type="number" value="37212">
+                        <input class="hide state" type="text" value="TN">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="shoulder-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Shoulder</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/harrold.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="pull-right">Harrold</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="pull-right">Cheyenne, WY</h6>
+                        <input class="hide zip" type="number" value="82001">
+                        <input class="hide state" type="text" value="WY">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="multiple-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3>Multiple Joints</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="views/storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+          <div class="row">
+            <div class="col-xs-12">
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              Pagination
+            </div>
+          </div>
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="nopad text-left" id="foottopnav">
+            <li>
+              <a href="#">
+                <h6>Careers - Johnson & Johnson </h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Contact Us</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Privacy Policy</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Legal Notice</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Site Map</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Safe Harbor</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Ethics Hotline</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>Consultant Indentification & Payments</h6>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h6>California Compliance Notice</h6>
+              </a>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="shadow-top"></div>
-    <div id="wrap">
-      <div id="main" class="container-fluid">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      <div class="row">
+        <div class="col-xs-12">
+          <h6 id="jpr">Joint Pain Resources:</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <ul class="nopad text-left" id="footbotnav">
+            <a href="#" class="bot">
+              <li>
+                <h6>Find A Physician</h6>
+              </li>
+            </a>
+            <a href="#" class="bot">
+              <li>
+                <h6>hipreplacement.com</h6>
+              </li>
+            </a>
+            <a href="#" class="bot">
+              <li>
+                <h6>kneereplacement.com</h6>
+              </li>
+            </a>
+            <a href="#" class="bot">
+              <li>
+                <h6>reallifetested.com</h6>
+              </li>
+            </a>
+            <a href="#" class="bot">
+              <li>
+                <h6>headiknownthen.com</h6>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <p>
+            &#169 DePuy Synthes Joint Reconstruction, a division of DOI 2014. All rights reserved. This site is published by DePuy Synthes Companies which is solely responsible for its content.  This site is intended for visitors from the United States.  The third party trademarks used herein are the trademarks of their respective owners.
+          </p>
+        </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="nopad text-left" id="foottopnav">
-              <li>
-                <a href="#">
-                  <h6>Careers - Johnson & Johnson </h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Contact Us</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Privacy Policy</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Legal Notice</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Site Map</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Safe Harbor</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Ethics Hotline</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>Consultant Indentification & Payments</h6>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <h6>California Compliance Notice</h6>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <h6 id="jpr">Joint Pain Resources:</h6>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <ul class="nopad text-left" id="footbotnav">
-              <a href="#" class="bot">
-                <li>
-                  <h6>Find A Physician</h6>
-                </li>
-              </a>
-              <a href="#" class="bot">
-                <li>
-                  <h6>hipreplacement.com</h6>
-                </li>
-              </a>
-              <a href="#" class="bot">
-                <li>
-                  <h6>kneereplacement.com</h6>
-                </li>
-              </a>
-              <a href="#" class="bot">
-                <li>
-                  <h6>reallifetested.com</h6>
-                </li>
-              </a>
-              <a href="#" class="bot">
-                <li>
-                  <h6>headiknownthen.com</h6>
-                </li>
-              </a>
-            </ul>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <p>
-              &#169 DePuy Synthes Joint Reconstruction, a division of DOI 2014. All rights reserved. This site is published by DePuy Synthes Companies which is solely responsible for its content.  This site is intended for visitors from the United States.  The third party trademarks used herein are the trademarks of their respective owners.
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+  </footer>
+</body>
 </html>
