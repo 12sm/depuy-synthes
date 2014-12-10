@@ -634,6 +634,7 @@ Story Index Page
   opacity:1;
   color:#FFF;
   font-size:13px;
+  display:inline-block;
   font-weight: 100;
   letter-spacing:.3px;
   margin-right:5px;
@@ -666,6 +667,45 @@ a.shoulder-item {
 
 a.multi-item {
   background: #36325B;
+}
+
+button#dropdownMenu-mobile-filter,
+button#dropdownMenu-show {
+  width: 100%;
+  text-align: left;
+  font-size: 14px;
+  color: #555555;
+  border: 1px solid #cbcbcb;
+  border-radius: 0px;
+  background: #ECECEC;
+}
+
+.dropdown-menu {
+  border-radius: 0px!important;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  font-size: 14px;
+  background-color: #ECECEC;
+  border: 1px solid #cbcbcb;
+  border-radius: 4px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  min-width:0px;
+}
+
+.dropdown-menu li a {
+  font-size: 14px;
+  color: #555555;
+  padding: 10px 20px;
+}
+
+img.dropdown-arrow {
+  width: 17px;
+  height: auto;
+  text-align: right;
+  float: right;
+  margin-top: 5px;
 }
 
 /* ==========================================================================
@@ -843,7 +883,10 @@ hr {
 
   /*-------- Story Show End --------*/
 
-
+  button#dropdownMenu-show {
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
 
 
 
@@ -852,9 +895,21 @@ hr {
 /* Medium devices 992px and up */
 @media (min-width: 992px) {
 
+
+  button#dropdownMenu-show {
+    margin-top: 20px;
+    width: 140px;
+    padding: 10px 20px;
+    float: right;
+  }
+
+  .dropdown-menu {
+    top: 60px;
+  }
+
   h2#sh1, h2#sh2, span#sh2 {
     font-size: 28px;
-    margin-top: 60px;
+    margin-top: 61px;
   }
 
   /*-------- SLIDER BEGIN--------*/
