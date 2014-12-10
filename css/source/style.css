@@ -48,6 +48,10 @@ a:hover {
   text-decoration:none;
 }
 
+.grey {
+  color:#989898;
+}
+
 .btn-primary {
   background: #FFF;
   border-radius: 0px 10px 0px 10px;
@@ -181,28 +185,24 @@ form.navbar-form .form-group.input-group {
   background-repeat: no-repeat;
   background-size:contain;
   height: 90px;
-  width: 250px;
+  width: 190px;
   vertical-align: middle;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .navbar-toggle {
-  padding: 15px 15px !important;
-  margin: 12px 0 !important;
+  padding: 12px 0px !important;
+  margin: 1px!important;
 }
 
 .navbar-default {
-  height: 90px;
+  height: 55px;
   border: none;
   background-color: #FFF;
 }
 
 #navy {
   height: 100%;
-}
-
-.navbar-toggle {
-  margin:20px 0px 0px 0px !important
 }
 
 .navbar-collapse.collapse.in {
@@ -382,6 +382,7 @@ hr {
   height: 0;
   border-top: 1px solid #cbcbcb;
   border-bottom: 1px solid rgba(255, 255, 255, 0);
+  margin-top: 10px;
 }
 
 .card-photo {
@@ -398,6 +399,10 @@ hr {
 .card-line {
   position: relative;
   top: -10px;
+}
+
+.card-line hr {
+  margin-top: 20px;
 }
 
 .card-header {
@@ -446,7 +451,7 @@ hr {
 }
 
 .multiple-card-footer {
-  background-color: purple;
+  background-color: #36325B;
 }
 
 .card-unit h5 {
@@ -535,14 +540,18 @@ Story Show Page
   width: 100%;
 }
 
-h2#sh2 {
+h2#sh2, span#sh2 {
   color: #6A6A6A;
   margin-top: 6px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 h2#sh1 {
   color: #0b3d60;
-  margin-top:20px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 100;
 }
 
 #botSocials {
@@ -592,6 +601,73 @@ Story Index Page
 
 /*-------- MAP END --------*/
 
+.page-count {
+  text-align: center;
+  color: #6A6A6A;
+  margin-top: 20px;
+}
+
+.page-count p {
+  margin: 0;
+  display: inline-block;
+}
+
+.previous-page img,
+.next-page img {
+  height:20px;
+  padding:0px 20px;
+}
+
+.previous-page a,
+.next-page a {
+  opacity:1;
+  transition:opacity .3s ease;
+}
+
+.previous-page a:hover,
+.next-page a:hover {
+  opacity:.5;
+}
+
+.filter-items a {
+  padding: 12px 20px;
+  opacity:1;
+  color:#FFF;
+  font-size:13px;
+  font-weight: 100;
+  letter-spacing:.3px;
+  margin-right:5px;
+  transition:opacity .3s ease;
+}
+
+.filter-items a:hover{
+  opacity:.8;
+}
+
+.filter-items {
+  margin:20px 0px;
+}
+
+a.all-item {
+  background: #555555;
+}
+
+a.hip-item {
+  background: #A29368;
+}
+
+a.knee-item {
+  background: #0B3D60;
+}
+
+a.shoulder-item {
+  background: #872828;
+}
+
+a.multi-item {
+  background: #36325B;
+}
+
 /* ==========================================================================
 Primary Content
 ========================================================================== */
@@ -615,6 +691,11 @@ Media Queries
     min-width: 750px;
   }
 
+  h2#sh1, h2#sh2, span#sh2 {
+    font-size: 24px;
+    margin-top:40px;
+  }
+
 /*-------- NAVBAR BEGIN--------*/
   .navbar-default {
     height: 100px;
@@ -635,7 +716,8 @@ Media Queries
   #nav-logo {
     background-size: contain;
     height: 100px;
-    width: 100%;
+    width: 260px;
+    margin: 11px 0px;
   }
 
   ul.nav.navbar-nav.navbar-right li a {
@@ -702,7 +784,7 @@ Media Queries
 
 .card-unit h6 {
   margin-top: 3px;
-  font-size: 9px;
+  font-size: 13px;
 }
 
 hr {
@@ -761,10 +843,19 @@ hr {
 
   /*-------- Story Show End --------*/
 
+
+
+
+
 }
 
 /* Medium devices 992px and up */
 @media (min-width: 992px) {
+
+  h2#sh1, h2#sh2, span#sh2 {
+    font-size: 28px;
+    margin-top: 60px;
+  }
 
   /*-------- SLIDER BEGIN--------*/
   .slides > li > div {
