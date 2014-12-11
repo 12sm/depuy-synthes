@@ -598,7 +598,7 @@ Story Index Page
 
 .map-filter {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   padding: 30px 20px 20px 110px;
   width: 100%;
 }
@@ -717,6 +717,41 @@ img.dropdown-arrow {
   float: right;
   margin-top: 5px;
 }
+
+.map-filter .btn-group .dropdown-toggle {
+  height: 50px;
+  color: #0b3d60;
+  font-size:16px;
+  border: 1px solid #a39468;
+  border-radius:5px;
+  box-shadow: 8px 11px 22px 0 rgba(0,0,0,.3);
+}
+
+.map-filter img.dropdown-arrow {
+  margin-left: 30px;
+}
+
+.map-filter ul.dropdown-menu {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  overflow: scroll;
+  background: #FFF;
+  color: #0b3d60;
+  font-size:16px;
+  margin-top: -1px;
+  border: 1px solid #a39468;
+}
+
+ul.dropdown-menu.joint-items {
+  width: 206px;
+}
+
+ul.dropdown-menu.hobby-items {
+  width: 174px;
+}
+
+
 
 /* ==========================================================================
 Primary Content
