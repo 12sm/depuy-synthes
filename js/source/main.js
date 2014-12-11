@@ -1,27 +1,26 @@
 (function(){
   'use strict';
 
-  var lastElement = false;
-  var map, geocoder;
   var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
-  var info = [], infowindows = [], counter = 0, story;
+  var infowindows = [], map, geocoder, lastElement = false;
 
   window.onload = loadMap;
   $(document).ready(initialize);
 
   function initialize(){
-    $(".imgLiquidFill").imgLiquid();
+    $('.imgLiquidFill').imgLiquid();
     $('.flexslider').flexslider();
+    $('#wrap').click(closeInfoWindows);
     addBullet();
   }
 
   function loadMap(){
-    geocoder   = new google.maps.Geocoder();
+    geocoder       = new google.maps.Geocoder();
     var mapOptions = {
-      zoom     : 5,
-      center   : {lat : 39.489, lng : -97.336}
+      zoom         : 5,
+      center       : {lat : 39.489, lng : -97.336}
     };
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    map            = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
     getInfo();
   }
 
@@ -40,18 +39,20 @@
 
   function codeAddress(story){
     geocoder.geocode({'address': story[0]}, function(results, status){
-      if (status == google.maps.GeocoderStatus.OK) {
+      if(status == google.maps.GeocoderStatus.OK){
         setMarker(results[0], story);
-      } else {
-        alert("Geocode was not successful for the following reason: " + status);
+      }else{
+        console.log(status);
       }
     });
   }
 
   function setMarker(result, story){
+    var dot    = getPath(story[5]);
     var marker = new google.maps.Marker({
       map      : map,
       position : result.geometry.location,
+      icon     : dot,
       photo    : story[2],
       name     : story[3],
       city     : story[4],
@@ -60,9 +61,29 @@
     getInfoWindow(marker);
   }
 
+  function getPath(joint){
+    var path;
+    switch (joint){
+      case 'Knee':
+        path = '../images/blue-point.png';
+        break;
+      case 'Shoulder':
+        path = '../images/red-point.png';
+        break;
+      case 'Hip':
+        path = '../images/gold-point.png';
+        break;
+      case 'Multiple Joints':
+        path = '../images/purple-point.png';
+        break;
+    }
+    return path;
+  }
+
   function getInfoWindow(marker){
-    google.maps.event.addListener(marker, 'click', function(){
-      var contentString = '<div class="r"ow">'+
+    google.maps.event.addListener(marker, 'mouseover', function(){
+      closeInfoWindows();
+      var contentString = '<div class="row">'+
                             '<div class="col-xs-12">'+
                               '<img src="'+marker.photo+'">'+
                               '<div class="row">'+
@@ -83,8 +104,15 @@
                           '</div>';
 
       var infowindow = new google.maps.InfoWindow({content : contentString});
+      infowindows.push(infowindow);
       infowindow.open(map, marker);
     });
+  }
+
+  function closeInfoWindows(){
+    for(var f = 0; f < infowindows.length; f++){
+      infowindows[f].close();
+    }
   }
 
   function addBullet(){
