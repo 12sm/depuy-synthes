@@ -506,9 +506,15 @@ Story Show Page
 .story-unit {
   background-color: #FFFFFF;
   border-radius: 10px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
-  -moz-box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
-  box-shadow: 0px 0px 10px 10px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,.05);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,.05);
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,.05);
+  margin-top:20px;
+  margin-bottom: 20px;
+}
+
+.story-unit.hero-unit {
+  padding: 10px;
 }
 
 .card-unit {
@@ -520,6 +526,48 @@ Story Show Page
 
 .hero-unit > div {
   margin: 0 !important;
+}
+
+.card-photo-story-page {
+  position: relative!Important;
+  top: 15px;
+  margin-bottom: 0;
+  border: none;
+  height: 70px;
+  width: 70px;
+  text-align: right;
+  float: right;
+}
+
+.story-unit.hero-unit {
+  padding:0;
+}
+
+.story-story p {
+  font-size: 14px;
+  line-height: 1.8;
+  letter-spacing: .3px;
+}
+
+.story-unit.hero-unit ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  letter-spacing: .3px;
+}
+
+.story-unit.hero-unit ul span.blue-accent {
+  display: block;
+  margin-top: 10px;
+}
+
+blockquote {
+  border: none;
+  padding: 0;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 18px;
+  margin: 34px 0px 30px 0px;
 }
 
 #socialTop > li, #socialTop > li > h6 {
@@ -916,7 +964,7 @@ hr {
 /*-------- Story Show Begin --------*/
   #socialTop {
     display: inline-block !important;
-    margin-top: 13px;
+    margin-top: 39px;
   }
 
   #botSocials {
@@ -925,6 +973,20 @@ hr {
 
   .storyHeader.text-left.inBlock {
     width: auto;
+  }
+
+  .story-unit.hero-unit {
+    padding: 15px;
+  }
+
+  .story-unit.hero-unit ul span.blue-accent {
+    display: inline;
+    line-height: 1.6;
+  }
+
+  .story-unit.hero-unit ul {
+    font-size: 16px;
+    padding-top: 20px;
   }
 
   /*-------- Story Show End --------*/
@@ -990,6 +1052,15 @@ hr {
 
 #socialTop {
   margin-top: 59px;
+}
+
+.storyHeader.text-left.inBlock h2#sh2,
+.storyHeader.text-left.inBlock h2#sh1 {
+  margin-top: 21px;
+}
+
+blockquote {
+  margin: 15px 0px 25px 0px;
 }
 
 /*-------- Story Show End --------*/
