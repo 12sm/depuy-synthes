@@ -596,7 +596,17 @@ Story Index Page
   height: 600px;
 }
 
+.map-filter {
+  position: absolute;
+  z-index: 5;
+  padding: 30px 20px 20px 110px;
+  width: 100%;
+}
 
+p.select-from-drop-down {
+  color:#0b3d60;
+  font-weight:bold;
+}
 
 
 /*-------- MAP END --------*/
