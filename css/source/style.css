@@ -108,7 +108,7 @@ a:hover {
 Navbar
 ========================================================================== */
 nav {
-  border-bottom: 1px grey solid !important;
+  border-bottom: 1px #E2DED3 solid !important;
 }
 
 .navbar-collapse.collapse {
@@ -802,12 +802,38 @@ ul.dropdown-menu.hobby-items {
 
 
 /* ==========================================================================
-Primary Content
+Search Results Page
 ========================================================================== */
 
+.story-unit.hero-unit ul.search-results-list {
+  padding-top: 0px;
+}
 
+li.search-item-title {
+  color:#0B3D60;
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10px;
+}
 
+li.search-item p {
+  line-height: 1.8;
+  font-size: 14px!important;
+  padding-top: 3px;
+}
 
+li.search-hr {
+  padding: 5px 0px 0px 0px;
+}
+
+li.search-hr hr {
+  border-top:1px solid #E8E4D9;
+  border-bottom:1px solid transparent;
+}
+
+.search-unit ul.search-results-list:last-child li.search-hr {
+  display: none;
+}
 
 
 /* ==========================================================================
