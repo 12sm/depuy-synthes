@@ -302,6 +302,16 @@ ul#foottopnav li {
   text-decoration:none;
 }
 
+ul#footbotnav a:first-child {
+  color: #0b3d60;
+  background: #FFF;
+  transition:opacity .3s ease;
+}
+
+ul#footbotnav a:first-child:hover {
+  opacity:.8;
+}
+
 footer p {
   margin-top: 25px;
   color: #FFF;
