@@ -651,6 +651,7 @@ ul#socialTop li {
 /* ==========================================================================
 Story Index Page
 ========================================================================== */
+
 /*-------- MAP BEGIN --------*/
 #map-canvas {
   width: 100%;
@@ -671,6 +672,16 @@ p.select-from-drop-down {
 }
 
 /*-------- MAP END --------*/
+
+.expand-collapse {
+  bottom: 0;
+  text-align: right;
+}
+
+p.collapse-map {
+  font-weight: bold;
+  color: #0b3d60;
+}
 
 .page-count {
   text-align: center;
