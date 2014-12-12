@@ -29,7 +29,9 @@ h4 {}
 h5 {}
 
 h6 {
-  font-size: 14px;
+  font-size: 12px;
+  font-weight: 200;
+  letter-spacing: 0.4px;
 }
 
 .blue-accent {color:#0B3D60;}
@@ -369,6 +371,11 @@ Home Page
   width: 100%;
   height: 100%;
 }
+
+.flex-control-nav, .flex-direction-nav {
+  display:none;
+}
+
 /*-------- SLIDER END--------*/
 
 
@@ -1125,6 +1132,14 @@ Media Queries
     padding:0px 80px;
     padding-top:70px;
   }
+
+  .flex-control-nav {
+    padding-bottom:20px;
+  }
+
+  .flex-control-nav, .flex-direction-nav {
+    display:block;
+  }
 /*-------- SLIDER END --------*/
 
 
@@ -1308,6 +1323,9 @@ hr {
 /* Medium devices 992px and up */
 @media (min-width: 992px) {
 
+  form.navbar-form .form-group.input-group {
+    width: 200px;
+  }
 
   button#dropdownMenu-show {
     margin-top: 20px;
@@ -1343,6 +1361,8 @@ hr {
   .slide_title {
     font-size: 72px;
   }
+
+
 /*-------- SLIDER END--------*/
 
 
