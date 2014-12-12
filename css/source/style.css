@@ -831,6 +831,15 @@ img.toop-tip-arrow {
   margin-top: 26px;
 }
 
+.gm-style-iw {
+  width: 100% !important;
+  height: auto !important;
+  top: 0px !important;
+  left: 0px !important;
+  padding: 9px 10px !important;
+  box-shadow: 10px 10px 5px #888888 !important;
+}
+
 /* ----- Tool Tip Styling End -----*/
 
 

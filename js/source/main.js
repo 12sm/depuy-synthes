@@ -2,7 +2,7 @@
   'use strict';
 
   var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
-  var infowindows = [], map, geocoder, lastElement = false;
+  var infowindows = [], stories = [], filtered = [], map, geocoder, lastElement = false;
 
   window.onload = loadMap;
   $(document).ready(initialize);
@@ -10,6 +10,9 @@
   function initialize(){
     $('.imgLiquidFill').imgLiquid();
     $('.flexslider').flexslider();
+    $('.state-items > li').click(filterStates);
+    $('.joint-items > li').click(filterJoints);
+    $('.hobby-items > li').click(filterHobbies);
     addBullet();
   }
 
@@ -33,6 +36,8 @@
       story.push($(this).find(".name").text());
       story.push($(this).find(".city").text());
       story.push($(this).find(".joint").text());
+      story.push($(this).find(".hobby").attr("value"));
+      stories.push(story);
       codeAddress(story);
     });
   }
@@ -56,7 +61,8 @@
       photo    : story[2],
       name     : story[3],
       city     : story[4],
-      joint    : story[5]
+      joint    : story[5],
+      hobby    : story[6]
     });
     getInfoWindow(marker);
   }
@@ -98,15 +104,40 @@
                           '</div>';
 
       var infowindow = new google.maps.InfoWindow({content : contentString});
+      console.log(infowindow);
       infowindows.push(infowindow);
       infowindow.open(map, marker);
+      addClassy();
     });
   }
 
+  function addClassy(){
+    var $outline = $('.gm-style-iw').parent();
+    $outline.addClass('outline');
+    console.log($outline);
+  }
+
   function closeInfoWindows(){
-    for(var f = 0; f < infowindows.length; f++){
-      infowindows[f].close();
+    for(var i = 0; i < infowindows.length; i++){
+      infowindows[i].close();
     }
+  }
+
+  function filterStates(){
+    // var filtered = [];
+    // var value    = $(this)
+    // for(var i = 0; i < stories.length; i++){
+    //   if(stories[i][1] == )
+    // }
+    return;
+  }
+
+  function filterJoints(){
+    return;
+  }
+
+  function filterHobbies(){
+    return;
   }
 
   function addBullet(){
