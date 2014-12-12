@@ -678,9 +678,17 @@ p.select-from-drop-down {
   text-align: right;
 }
 
-p.collapse-map {
+p.collapse-map,
+p.expand-map {
   font-weight: bold;
   color: #0b3d60;
+  transition:opacity .3s ease;
+}
+
+a p.collapse-map:hover,
+a p.expand-map:hover  {
+  text-decoration:none;
+  opacity:.8;
 }
 
 .page-count {
