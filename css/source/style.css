@@ -680,7 +680,7 @@ p.select-from-drop-down {
 
 p.collapse-map,
 p.expand-map {
-  font-weight: bold;
+  font-weight: 400;
   color: #0b3d60;
   transition:opacity .3s ease;
 }
