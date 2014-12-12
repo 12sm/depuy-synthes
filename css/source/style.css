@@ -1352,6 +1352,18 @@ input.form-control.city {
   width: 190px;
 }
 
+span.no-file-chosen {
+  padding-left: 20px;
+}
+
+img.activity-icon {
+  margin: 0;
+}
+
+textarea {
+  height: 40px;
+}
+
 
 /*-------- Story Form End --------*/
 
