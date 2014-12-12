@@ -840,6 +840,42 @@ img.toop-tip-arrow {
   box-shadow: 10px 10px 5px #888888 !important;
 }
 
+.gm-style div {
+  background: transparent!important;
+  box-shadow: none!important;
+}
+
+.gm-style div {
+  background: transparent!important;
+  border: 0!important;
+  box-shadow: none!important;
+}
+
+.row.tool-tip {
+  background: #FFF!important;
+  border-radius: 30px;
+  bottom: -10px;
+}
+
+.gm-style .gm-style-iw {
+  font-weight: 300;
+  font-size: 13px;
+  background-color: #FFF!important;
+  border-radius: 10px;
+  box-shadow: none!important;
+  height: 102px!important;
+  margin-top: 2px; /* adjust this when adding down caret */
+}
+
+/* .gm-style .gm-style-iw:after {
+  content: url("../../images/tool-tip-caret.png");
+  text-align:center;
+  margin:0 auto;
+  padding-left:126px; */
+
+}
+
+
 /* ----- Tool Tip Styling End -----*/
 
 
