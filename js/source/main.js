@@ -2,7 +2,7 @@
   'use strict';
 
   var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
-  var infowindows = [], stories = [], filtered = [], map, geocoder, lastElement = false;
+  var infowindows = [], allMarkers = [], stories = [], filtered = [], map, geocoder, lastElement = false;
 
   window.onload = loadMap;
   $(document).ready(initialize);
@@ -10,9 +10,9 @@
   function initialize(){
     $('.imgLiquidFill').imgLiquid();
     $('.flexslider').flexslider();
-    $('.state-items > li').click(filterStates);
+    // $('.state-items > li').click(filterStates);
     $('.joint-items > li').click(filterJoints);
-    $('.hobby-items > li').click(filterHobbies);
+    // $('.hobby-items > li').click(filterHobbies);
     addBullet();
   }
 
@@ -64,6 +64,7 @@
       joint    : story[5],
       hobby    : story[6]
     });
+    allMarkers.push(marker);
     getInfoWindow(marker);
   }
 
@@ -107,14 +108,7 @@
       console.log(infowindow);
       infowindows.push(infowindow);
       infowindow.open(map, marker);
-      addClassy();
     });
-  }
-
-  function addClassy(){
-    var $outline = $('.gm-style-iw').parent();
-    $outline.addClass('outline');
-    console.log($outline);
   }
 
   function closeInfoWindows(){
@@ -123,22 +117,82 @@
     }
   }
 
-  function filterStates(){
-    // var filtered = [];
-    // var value    = $(this)
-    // for(var i = 0; i < stories.length; i++){
-    //   if(stories[i][1] == )
-    // }
-    return;
+  function markers(set){
+    for (var i = 0; i < allMarkers.length; i++){
+      allMarkers[i].setMap(set);
+    }
   }
+
+  // function filterStates(){
+  //   var value = $(this).text();
+  //   console.log(value);
+  //   markers(null);
+  //   for(var i = 0; i < stories.length; i++){
+  //     if(stories[i][1] == value){
+  //       codeAddress(stories[i]);
+  //       showStateCards(value);
+  //     }
+  //   }
+  //   if(value == 'All'){
+  //     markers(map);
+  //   }
+  // }
 
   function filterJoints(){
-    return;
+    var value = $(this).text();
+    console.log(value);
+    markers(null);
+    for(var i = 0; i < stories.length; i++){
+      if(stories[i][5] == value){
+        codeAddress(stories[i]);
+        showJointCards(value);
+      }
+    }
+    if(value == 'All' || value == 'All  \u2713'){
+      markers(map);
+    }
   }
 
-  function filterHobbies(){
-    return;
+  // function filterHobbies(){
+  //   var value = $(this).text();
+  //   console.log(value);
+  //   markers(null);
+  //   for(var i = 0; i < stories.length; i++){
+  //     if(stories[i][6] == value){
+  //       codeAddress(stories[i]);
+  //       showHobbyCards(value);
+  //     }
+  //   }
+  //   if(value == 'All'){
+  //     markers(map);
+  //   }
+  // }
+
+  // function showStateCards(value){
+  //   $(".card-unit").each(function(){
+  //     if($(this).find(".state").attr("value") != value){
+  //       $this.addClass('hide');
+  //     }
+  //   });
+  // }
+
+  function showJointCards(value){
+    $(".card-unit").each(function(){
+      var that = $(this).parent();
+      $(that).addClass('hidden');
+      if($(that).find(".joint").text() == value || value == 'All' || value == 'All  \u2713'){
+        $(that).removeClass('hidden');
+      }
+    });
   }
+
+  // function showHobbyCards(value){
+  //   $(".card-unit").each(function(){
+  //     if($(this).find(".hobby").attr("value") != value){
+  //       $this.addClass('hide');
+  //     }
+  //   });
+  // }
 
   function addBullet(){
     $("#foottopnav > li > a > h6").each(function(){

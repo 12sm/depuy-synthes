@@ -700,7 +700,7 @@ p.select-from-drop-down {
   opacity:.5;
 }
 
-.filter-items a {
+.filter-items > li {
   padding: 12px 20px;
   opacity:1;
   color:#FFF;
@@ -712,7 +712,7 @@ p.select-from-drop-down {
   transition:opacity .3s ease;
 }
 
-.filter-items a:hover{
+.filter-items > li:hover{
   opacity:.8;
 }
 

@@ -132,6 +132,7 @@
                         <ul class="dropdown-menu hobby-items" role="menu">
                           <li><a href="#">Tennis</a></li>
                           <li><a href="#">Swimming</a></li>
+                          <li><a href="#">Hiking</a></li>
                           <li><a href="#">Biking</a></li>
                           <li><a href="#">Walking</a></li>
                           <li><a href="#">Golfing</a></li>
@@ -149,11 +150,6 @@
           </div>
         </div>
       </div>
-
-
-
-
-
       <div class="row container">
         <div class="col-xs-12">
           <div class="row">
@@ -178,7 +174,7 @@
                   Filter
                   <img src="../images/pool/DropdownArrow@2x.png" class="dropdown-arrow" />
                 </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu-mobile-filter">
+                <ul class="dropdown-menu joint-items" role="menu" aria-labelledby="dropdownMenu-mobile-filter">
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">All</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Hip</a></li>
                   <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Knee</a></li>
@@ -203,13 +199,13 @@
             </div>
           </div>
           <div class="row visible-lg visible-md visible-sm hidden-xs">
-            <div class="col-xs-8 col-sm-9 col-md-8 col-lg-8 filter-items">
-              <a href="#" class="all-item">All  &#10003;</a>
-              <a href="#" class="hip-item">Hip</a>
-              <a href="#" class="knee-item">Knee</a>
-              <a href="#" class="shoulder-item">Shoulder</a>
-              <a href="#" class="multi-item">Multiple Joints</a>
-            </div>
+            <ul class="col-xs-8 col-sm-9 col-md-8 col-lg-8 filter-items joint-items">
+              <li><a href="#" class="all-item">All  &#10003;</a></li>
+              <li><a href="#" class="hip-item">Hip</a></li>
+              <li><a href="#" class="knee-item">Knee</a></li>
+              <li><a href="#" class="shoulder-item">Shoulder</a></li>
+              <li><a href="#" class="multi-item">Multiple Joints</a></li>
+            </ul>
             <div class="col-xs-6 col-sm-3 col-md-4 col-lg-4 sort-dropdown">
               <div class="dropdown">
                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu-show" data-toggle="dropdown" aria-expanded="true">
@@ -225,21 +221,9 @@
               </div>
             </div>
           </div>
-
-
-
-
-
-
           <div class="grid row">
-
-
-
-
-
-
             <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card-unit hero-unit">
+              <div class="mapped card-unit hero-unit">
                 <div class="card-header row">
                   <div class="col-xs-6">
                     <img class="card-photo" src="../images/bud.jpg">
@@ -255,6 +239,7 @@
                         <h6 class="city pull-right">Brooklyn, NY</h6>
                         <input class="hide zip" type="number" value="11225">
                         <input class="hide state" type="text" value="New York">
+                        <input class="hide hobby" type="text" value="Hiking">
                       </div>
                     </div>
                   </div>
@@ -298,6 +283,7 @@
                         <h6 class="city pull-right">Escondido, CA</h6>
                         <input class="hide zip" type="number" value="92025">
                         <input class="hide state" type="text" value="California">
+                        <input class="hide hobby" type="text" value="Dancing">
                       </div>
                     </div>
                   </div>
@@ -341,6 +327,7 @@
                         <h6 class="city pull-right">Nashville, TN</h6>
                         <input class="hide zip" type="number" value="37212">
                         <input class="hide state" type="text" value="Tennessee">
+                        <input class="hide hobby" type="text" value="Tennis">
                       </div>
                     </div>
                   </div>
@@ -384,178 +371,7 @@
                         <h6 class="city pull-right">Cheyenne, WY</h6>
                         <input class="hide zip" type="number" value="82001">
                         <input class="hide state" type="text" value="Wyoming">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line row">
-                  <div class="col-xs-12">
-                    <hr>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p id="card-quote">
-                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
-                    </p>
-                  </div>
-                </div>
-                <div class="multiple-card-footer card-footer row">
-                  <div class="col-xs-6">
-                    <h3 class="joint">Multiple Joints</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="mapped card-unit hero-unit">
-                <div class="card-header row">
-                  <div class="col-xs-6">
-                    <img class="card-photo" src="../images/bud.jpg">
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h5 class="name pull-right">Bud</h5>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h6 class="city pull-right">Brooklyn, NY</h6>
-                        <input class="hide zip" type="number" value="11225">
-                        <input class="hide state" type="text" value="New York">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line row">
-                  <div class="col-xs-12">
-                    <hr>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p id="card-quote">
-                      "I never thought I would be able to hike again..."
-                    </p>
-                  </div>
-                </div>
-                <div class="hip-card-footer card-footer row">
-                  <div class="col-xs-6">
-                    <h3 class="joint">Hip</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card-unit hero-unit">
-                <div class="card-header row">
-                  <div class="col-xs-6">
-                    <img class="card-photo" src="../images/sharon.jpg">
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h5 class="name pull-right">Sharon</h5>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h6 class="city pull-right">Escondido, CA</h6>
-                        <input class="hide zip" type="number" value="92025">
-                        <input class="hide state" type="text" value="California">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line row">
-                  <div class="col-xs-12">
-                    <hr>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p id="card-quote">
-                      "Dancing at my daughter's wedding meant more to me than words can express."
-                    </p>
-                  </div>
-                </div>
-                <div class="knee-card-footer card-footer row">
-                  <div class="col-xs-6">
-                    <h3 class="joint">Knee</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card-unit hero-unit">
-                <div class="card-header row">
-                  <div class="col-xs-6">
-                    <img class="card-photo" src="../images/george.jpg">
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h5 class="name pull-right">George</h5>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h6 class="city pull-right">Nashville, TN</h6>
-                        <input class="hide zip" type="number" value="37212">
-                        <input class="hide state" type="text" value="Tennessee">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-line row">
-                  <div class="col-xs-12">
-                    <hr>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <p id="card-quote">
-                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
-                    </p>
-                  </div>
-                </div>
-                <div class="shoulder-card-footer card-footer row">
-                  <div class="col-xs-6">
-                    <h3 class="joint">Shoulder</h3>
-                  </div>
-                  <div class="col-xs-6">
-                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-              <div class="card-unit hero-unit">
-                <div class="card-header row">
-                  <div class="col-xs-6">
-                    <img class="card-photo" src="../images/harrold.jpg">
-                  </div>
-                  <div class="col-xs-6">
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h5 class="name pull-right">Harrold</h5>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-xs-12">
-                        <h6 class="city pull-right">Cheyenne, WY</h6>
-                        <input class="hide zip" type="number" value="82001">
-                        <input class="hide state" type="text" value="Wyoming">
+                        <input class="hide hobby" type="text" value="Tennis">
                       </div>
                     </div>
                   </div>
@@ -599,6 +415,7 @@
                         <h6 class="city pull-right">Brooklyn, NY</h6>
                         <input class="hide zip" type="number" value="11225">
                         <input class="hide state" type="text" value="New York">
+                        <input class="hide hobby" type="text" value="Hiking">
                       </div>
                     </div>
                   </div>
@@ -642,6 +459,7 @@
                         <h6 class="city pull-right">Escondido, CA</h6>
                         <input class="hide zip" type="number" value="92025">
                         <input class="hide state" type="text" value="California">
+                        <input class="hide hobby" type="text" value="Dancing">
                       </div>
                     </div>
                   </div>
@@ -685,6 +503,7 @@
                         <h6 class="city pull-right">Nashville, TN</h6>
                         <input class="hide zip" type="number" value="37212">
                         <input class="hide state" type="text" value="Tennessee">
+                        <input class="hide hobby" type="text" value="Tennis">
                       </div>
                     </div>
                   </div>
@@ -728,6 +547,183 @@
                         <h6 class="city pull-right">Cheyenne, WY</h6>
                         <input class="hide zip" type="number" value="82001">
                         <input class="hide state" type="text" value="Wyoming">
+                        <input class="hide hobby" type="text" value="Tennis">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="multiple-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3 class="joint">Multiple Joints</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/bud.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="name pull-right">Bud</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="city pull-right">Brooklyn, NY</h6>
+                        <input class="hide zip" type="number" value="11225">
+                        <input class="hide state" type="text" value="New York">
+                        <input class="hide hobby" type="text" value="Hiking">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I never thought I would be able to hike again..."
+                    </p>
+                  </div>
+                </div>
+                <div class="hip-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3 class="joint">Hip</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/sharon.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="name pull-right">Sharon</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="city pull-right">Escondido, CA</h6>
+                        <input class="hide zip" type="number" value="92025">
+                        <input class="hide state" type="text" value="California">
+                        <input class="hide hobby" type="text" value="Dancing">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "Dancing at my daughter's wedding meant more to me than words can express."
+                    </p>
+                  </div>
+                </div>
+                <div class="knee-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3 class="joint">Knee</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/george.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="name pull-right">George</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="city pull-right">Nashville, TN</h6>
+                        <input class="hide zip" type="number" value="37212">
+                        <input class="hide state" type="text" value="Tennessee">
+                        <input class="hide hobby" type="text" value="Tennis">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-line row">
+                  <div class="col-xs-12">
+                    <hr>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <p id="card-quote">
+                      "I played tennis all my life, but was unable for many years before my shoulder surgery."
+                    </p>
+                  </div>
+                </div>
+                <div class="shoulder-card-footer card-footer row">
+                  <div class="col-xs-6">
+                    <h3 class="joint">Shoulder</h3>
+                  </div>
+                  <div class="col-xs-6">
+                    <a class="pull-right" href="storyShow.html"><h5>Read Story </h5></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+              <div class="card-unit hero-unit">
+                <div class="card-header row">
+                  <div class="col-xs-6">
+                    <img class="card-photo" src="../images/harrold.jpg">
+                  </div>
+                  <div class="col-xs-6">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h5 class="name pull-right">Harrold</h5>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <h6 class="city pull-right">Cheyenne, WY</h6>
+                        <input class="hide zip" type="number" value="82001">
+                        <input class="hide state" type="text" value="Wyoming">
+                        <input class="hide hobby" type="text" value="Tennis">
                       </div>
                     </div>
                   </div>
@@ -755,16 +751,6 @@
               </div>
             </div>
           </div>
-
-
-
-
-
-
-
-
-
-
           <div class="row">
             <div class="col-xs-12">
               <hr>
@@ -785,12 +771,6 @@
               </span>
             </div>
           </div>
-
-
-
-
-
-
         </div>
       </div>
     </div>
