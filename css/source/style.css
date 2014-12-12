@@ -840,7 +840,6 @@ li.search-hr hr {
 Form Page
 ========================================================================== */
 
-
 .story-unit.hero-unit.form-unit {
   padding: 10px 0px;
 }
@@ -862,7 +861,55 @@ form.form-inline button.btn.btn-default.dropdown-toggle {
   border-radius: 0px;
   width: 100%;
   display: inline-block;
+  padding: 10px;
+  text-align: left;
 }
+
+.btn-group.state-dropdown,
+.btn-group.add-a-photo {
+  width: 100%;
+  margin-bottom:10px;
+}
+
+img.activity-icon {
+  width: 40px;
+  display: block;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.list-of-activity-items {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-of-activity-items p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+form p.blue-accent {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+p.other {
+  text-align: center;
+}
+
+form strong p.blue-accent {
+  margin-top: 0;
+}
+
+ul.list li {
+  display: inline;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #989898;
+}
+
 
 
 /* ==========================================================================
