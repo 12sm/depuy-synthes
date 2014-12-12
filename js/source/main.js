@@ -10,7 +10,6 @@
   function initialize(){
     $('.imgLiquidFill').imgLiquid();
     $('.flexslider').flexslider();
-    $('#wrap').click(closeInfoWindows);
     addBullet();
   }
 
@@ -18,6 +17,7 @@
     geocoder       = new google.maps.Geocoder();
     var mapOptions = {
       zoom         : 5,
+      scrollwheel  : false,
       center       : {lat : 39.489, lng : -97.336}
     };
     map            = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
@@ -81,7 +81,7 @@
   }
 
   function getInfoWindow(marker){
-    google.maps.event.addListener(marker, 'mouseover', function(){
+    google.maps.event.addListener(marker, 'click', function(){
       closeInfoWindows();
       var contentString = '<div class="row">'+
                             '<div class="col-xs-12">'+
