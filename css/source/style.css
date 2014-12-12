@@ -700,16 +700,19 @@ p.select-from-drop-down {
   opacity:.5;
 }
 
-.filter-items > li {
-  padding: 12px 20px;
+.filter-items li {
   opacity:1;
-  color:#FFF;
   font-size:13px;
   display:inline-block;
-  font-weight: 100;
-  letter-spacing:.3px;
   margin-right:5px;
   transition:opacity .3s ease;
+}
+
+.filter-items li a {
+  padding: 12px 20px;
+  color:#FFF;
+  font-weight: 100;
+  letter-spacing:.3px;
 }
 
 .filter-items > li:hover{
@@ -1305,7 +1308,7 @@ hr {
   }
 
   button#dropdownMenu-show {
-    margin-top: 20px;
+    margin-top: 11px;
     padding: 10px 20px;
   }
 
@@ -1454,7 +1457,7 @@ hr {
   }
 
   button#dropdownMenu-show {
-    margin-top: 20px;
+    margin-top: 11px;
     width: 140px;
     padding: 10px 20px;
     float: right;
