@@ -642,11 +642,12 @@ Story Index Page
 #map-canvas {
   width: 100%;
   height: 600px;
+  z-index: 0;
 }
 
 .map-filter {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   padding: 30px 20px 20px 110px;
   width: 100%;
 }
@@ -655,7 +656,6 @@ p.select-from-drop-down {
   color:#0b3d60;
   font-weight:bold;
 }
-
 
 /*-------- MAP END --------*/
 
@@ -799,6 +799,40 @@ ul.dropdown-menu.hobby-items {
   width: 174px;
 }
 
+/* ----- Tool Tip Styling Start -----*/
+
+img.marker-photo {
+  border-radius: 100px;
+  height: 70px;
+}
+
+h2.marker-name {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 3px;
+  margin-top: 1px;
+}
+
+h2.marker-city {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0px 0px 3px 0px;
+}
+
+h2.marker-joint {
+  font-size: 18px;
+  color: #872728;
+  font-weight: 100;
+  margin: 0px 0px 3px 0px;
+}
+
+img.toop-tip-arrow {
+  width: 11px;
+  margin-top: 26px;
+}
+
+/* ----- Tool Tip Styling End -----*/
+
 
 
 /* ==========================================================================
@@ -834,6 +868,123 @@ li.search-hr hr {
 .search-unit ul.search-results-list:last-child li.search-hr {
   display: none;
 }
+
+
+/* ==========================================================================
+Form Page
+========================================================================== */
+
+.story-unit.hero-unit.form-unit {
+  padding: 10px 0px;
+}
+
+.top-disclaimer-text p {
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.story-unit.hero-unit.form-unit .form-control {
+  padding: 20px 10px;
+  border-radius: 0px;
+  margin-bottom: 10px;
+  box-shadow: none;
+}
+
+form.form-inline button.btn.btn-default.dropdown-toggle {
+  background: #ECECEC;
+  border-radius: 0px;
+  width: 100%;
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+
+.btn-group.state-dropdown, .btn-group.add-a-photo {
+  width: 100%;
+  margin-bottom: -5px;
+}
+
+img.activity-icon {
+  width: 40px;
+  display: block;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.list-of-activity-items {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-of-activity-items p {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+form p.blue-accent {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+p.other {
+  text-align: center;
+}
+
+form strong p.blue-accent {
+  margin-top: 0;
+}
+
+ul.list li {
+  display: inline;
+}
+
+textarea {
+  width: 100%;
+  border: 1px solid #989898;
+}
+
+p.character-limit-reminder {
+  text-align: right;
+  font-size: 12px;
+  color: #A29368;
+}
+
+p.consent-form a {
+  color: #0B3D60;
+  text-decoration: underline;
+}
+
+.submit-story-btn {
+  background: #A29368;
+  width: 100%;
+  padding: 20px 0px;
+  font-size: 16px;
+  color: #FFF;
+  letter-spacing: .3px;
+  margin-bottom:20px;
+  ont-weight: 100;
+  margin-top:20px;
+  transition:opacity .3s ease;
+}
+
+.submit-story-btn:hover {
+  opacity:.8;
+  background: #A29368;
+  color: #FFF!important;
+}
+
+.submit-checkbox p {
+  font-size: 14px;
+}
+
+span.required {
+  color: #882828;
+  font-size: 14px;
+}
+
 
 
 /* ==========================================================================
@@ -1012,16 +1163,99 @@ hr {
 
   .story-unit.hero-unit ul {
     font-size: 16px;
-    padding-top: 20px;
+    padding-top: 0px;
+    max-height: 200px;
+    overflow: scroll;
   }
 
   /*-------- Story Show End --------*/
+
+  /* ----- Story Form Begin --- */
+
+  form p.blue-accent {
+    margin-top: 40px;
+    font-size: 16px;
+  }
 
   button#dropdownMenu-show {
     margin-top: 20px;
     padding: 10px 20px;
   }
 
+  .btn-group.state-dropdown, .btn-group.add-a-photo {
+    width: 251px;
+  }
+
+  .story-unit.hero-unit.form-unit .form-control {
+    width: 207px;
+    margin-right: 20px;
+    margin-bottom: 23px;
+  }
+
+  input.form-control.zip {
+    width: 90px!important;
+  }
+
+  input.form-control.city {
+    width: 280px!important;
+  }
+
+  span.no-file-chosen {
+    padding-left: 20px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  form.form-inline {
+    margin-top: 20px;
+  }
+
+  .btn-group.state-dropdown, .btn-group.add-a-photo {
+    margin-bottom: 21px;
+  }
+
+  img.activity-icon {
+    width: auto;
+    max-height: 60px;
+    display: block;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .checkbox-options p {
+    font-size: 14px;
+  }
+
+  p.other {
+    text-align: left;
+  }
+
+  input.form-control.other {
+    margin-bottom: 5px!important;
+    margin-top: 10px;
+
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #DFDFDF;
+  }
+
+  .submit-checkbox p {
+    font-size: 16px;
+  }
+
+  .submit-story-btn {
+    margin-top:10px;
+    padding: 15px 0px;
+  }
+
+  .submit-checkbox {
+    margin-top: 16px;
+  }
+
+  /* ----- Story Form End --- */
 
 
 }
@@ -1090,6 +1324,39 @@ blockquote {
 }
 
 /*-------- Story Show End --------*/
+
+
+/*-------- Story Form Begin --------*/
+
+
+.story-unit.hero-unit.form-unit .form-control {
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 23px;
+}
+
+input.form-control.city {
+  width: 220px!important;
+}
+
+.btn-group.state-dropdown, .btn-group.add-a-photo {
+  width: 190px;
+}
+
+span.no-file-chosen {
+  padding-left: 20px;
+}
+
+img.activity-icon {
+  margin: 0;
+}
+
+textarea {
+  height: 40px;
+}
+
+
+/*-------- Story Form End --------*/
 
 
 }

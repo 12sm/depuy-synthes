@@ -1,20 +1,112 @@
 (function(){
   'use strict';
-  var lastElement = false;
-  var mapKey      = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
-  var mapOptions  = {};
-  var zips        = [];
-  var states      = [];
-  var map, geocoder;
 
-  $(document).ready(initialize);
+  var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
+  var infowindows = [], map, geocoder, lastElement = false;
+
   window.onload = loadMap;
+  $(document).ready(initialize);
 
   function initialize(){
-    $(".imgLiquidFill").imgLiquid();
+    $('.imgLiquidFill').imgLiquid();
     $('.flexslider').flexslider();
     addBullet();
-    getStates();
+  }
+
+  function loadMap(){
+    geocoder       = new google.maps.Geocoder();
+    var mapOptions = {
+      zoom         : 5,
+      scrollwheel  : false,
+      center       : {lat : 39.489, lng : -97.336}
+    };
+    map            = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    getInfo();
+  }
+
+  function getInfo(){
+    $(".mapped").each(function(){
+      var story = [];
+      story.push($(this).find(".zip").attr("value"));
+      story.push($(this).find(".state").attr("value"));
+      story.push($(this).find(".card-photo").attr("src"));
+      story.push($(this).find(".name").text());
+      story.push($(this).find(".city").text());
+      story.push($(this).find(".joint").text());
+      codeAddress(story);
+    });
+  }
+
+  function codeAddress(story){
+    geocoder.geocode({'address': story[0]}, function(results, status){
+      if(status == google.maps.GeocoderStatus.OK){
+        setMarker(results[0], story);
+      }else{
+        console.log(status);
+      }
+    });
+  }
+
+  function setMarker(result, story){
+    var dot    = getPath(story[5]);
+    var marker = new google.maps.Marker({
+      map      : map,
+      position : result.geometry.location,
+      icon     : dot,
+      photo    : story[2],
+      name     : story[3],
+      city     : story[4],
+      joint    : story[5]
+    });
+    getInfoWindow(marker);
+  }
+
+  function getPath(joint){
+    var path;
+    switch (joint){
+      case 'Knee':
+        path = '../images/blue-point.png';
+        break;
+      case 'Shoulder':
+        path = '../images/red-point.png';
+        break;
+      case 'Hip':
+        path = '../images/gold-point.png';
+        break;
+      case 'Multiple Joints':
+        path = '../images/purple-point.png';
+        break;
+    }
+    return path;
+  }
+
+  function getInfoWindow(marker){
+    google.maps.event.addListener(marker, 'click', function(){
+      closeInfoWindows();
+      var contentString = '<div class="row tool-tip">'+
+                            '<div class="col-xs-4">'+
+                              '<img src="'+marker.photo+'" class="marker-photo">'+
+                            '</div>'+
+                            '<div class="col-xs-6">'+
+                              '<h2 class="marker-name">'+marker.name+'</h2>'+
+                              '<h2 class="marker-city">'+marker.city+'</h2>'+
+                              '<h2 class="marker-joint">'+marker.joint+'</h2>'+
+                            '</div>'+
+                            '<div class="col-xs-2">'+
+                              '<img src="../images/pool/RightArrow@2x.png" class="toop-tip-arrow" />'+
+                            '</div>'+
+                          '</div>';
+
+      var infowindow = new google.maps.InfoWindow({content : contentString});
+      infowindows.push(infowindow);
+      infowindow.open(map, marker);
+    });
+  }
+
+  function closeInfoWindows(){
+    for(var f = 0; f < infowindows.length; f++){
+      infowindows[f].close();
+    }
   }
 
   function addBullet(){
@@ -24,42 +116,6 @@
       }
       lastElement = $(this);
     }).last().addClass("nobullet");
-  }
-
-  function loadMap(){
-    geocoder = new google.maps.Geocoder();
-    mapOptions = {
-      zoom     : 5,
-      center   : {lat : 39.489, lng : -97.336}
-    };
-    map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    getZips();
-  }
-
-  function codeAddress(){
-    for(var i = 8; i < zips.length; i++){
-      var address = zips[i];
-      geocoder.geocode({'address': address}, function(results, status){
-        if (status == google.maps.GeocoderStatus.OK) {
-          var marker = new google.maps.Marker({
-            map: map,
-            position: results[0].geometry.location
-          });
-        } else {
-          alert("Geocode was not successful for the following reason: " + status);
-        }
-      });
-    }
-  }
-
-  function getZips(){
-    $(".zip").map(function(){zips.push(this.value);});
-    codeAddress();
-  }
-
-  function getStates(){
-    $(".state").map(function(){states.push(this.value);});
-    console.log(states);
   }
 
 })();
