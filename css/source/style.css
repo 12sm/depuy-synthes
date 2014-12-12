@@ -847,6 +847,9 @@ Form Page
 .top-disclaimer-text p {
   padding-top: 20px;
   font-size: 14px;
+  font-weight: 100;
+  line-height: 1.6;
+  margin-bottom: 30px;
 }
 
 .story-unit.hero-unit.form-unit .form-control {
@@ -865,10 +868,9 @@ form.form-inline button.btn.btn-default.dropdown-toggle {
   text-align: left;
 }
 
-.btn-group.state-dropdown,
-.btn-group.add-a-photo {
+.btn-group.state-dropdown, .btn-group.add-a-photo {
   width: 100%;
-  margin-bottom:10px;
+  margin-bottom: -5px;
 }
 
 img.activity-icon {
@@ -929,6 +931,7 @@ p.consent-form a {
   color: #FFF;
   letter-spacing: .3px;
   margin-bottom:20px;
+  ont-weight: 100;
   margin-top:20px;
   transition:opacity .3s ease;
 }
@@ -1126,16 +1129,99 @@ hr {
 
   .story-unit.hero-unit ul {
     font-size: 16px;
-    padding-top: 20px;
+    padding-top: 0px;
+    max-height: 200px;
+    overflow: scroll;
   }
 
   /*-------- Story Show End --------*/
+
+  /* ----- Story Form Begin --- */
+
+  form p.blue-accent {
+    margin-top: 40px;
+    font-size: 16px;
+  }
 
   button#dropdownMenu-show {
     margin-top: 20px;
     padding: 10px 20px;
   }
 
+  .btn-group.state-dropdown, .btn-group.add-a-photo {
+    width: 251px;
+  }
+
+  .story-unit.hero-unit.form-unit .form-control {
+    width: 207px;
+    margin-right: 20px;
+    margin-bottom: 23px;
+  }
+
+  input.form-control.zip {
+    width: 90px!important;
+  }
+
+  input.form-control.city {
+    width: 280px!important;
+  }
+
+  span.no-file-chosen {
+    padding-left: 20px;
+    color: #808080;
+    font-size: 16px;
+    font-weight: 100;
+  }
+
+  form.form-inline {
+    margin-top: 20px;
+  }
+
+  .btn-group.state-dropdown, .btn-group.add-a-photo {
+    margin-bottom: 21px;
+  }
+
+  img.activity-icon {
+    width: auto;
+    max-height: 60px;
+    display: block;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+
+  .checkbox-options p {
+    font-size: 14px;
+  }
+
+  p.other {
+    text-align: left;
+  }
+
+  input.form-control.other {
+    margin-bottom: 5px!important;
+    margin-top: 10px;
+
+  }
+
+  textarea {
+    width: 100%;
+    border: 1px solid #DFDFDF;
+  }
+
+  .submit-checkbox p {
+    font-size: 16px;
+  }
+
+  .submit-story-btn {
+    margin-top:10px;
+    padding: 15px 0px;
+  }
+
+  .submit-checkbox {
+    margin-top: 16px;
+  }
+
+  /* ----- Story Form End --- */
 
 
 }
@@ -1204,6 +1290,27 @@ blockquote {
 }
 
 /*-------- Story Show End --------*/
+
+
+/*-------- Story Form Begin --------*/
+
+
+.story-unit.hero-unit.form-unit .form-control {
+  width: 280px;
+  margin-right: 20px;
+  margin-bottom: 23px;
+}
+
+input.form-control.city {
+  width: 220px!important;
+}
+
+.btn-group.state-dropdown, .btn-group.add-a-photo {
+  width: 190px;
+}
+
+
+/*-------- Story Form End --------*/
 
 
 }
