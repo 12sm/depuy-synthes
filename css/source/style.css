@@ -799,6 +799,40 @@ ul.dropdown-menu.hobby-items {
   width: 174px;
 }
 
+/* ----- Tool Tip Styling Start -----*/
+
+img.marker-photo {
+  border-radius: 100px;
+  height: 70px;
+}
+
+h2.marker-name {
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 3px;
+  margin-top: 1px;
+}
+
+h2.marker-city {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 0px 0px 3px 0px;
+}
+
+h2.marker-joint {
+  font-size: 18px;
+  color: #872728;
+  font-weight: 100;
+  margin: 0px 0px 3px 0px;
+}
+
+img.toop-tip-arrow {
+  width: 11px;
+  margin-top: 26px;
+}
+
+/* ----- Tool Tip Styling End -----*/
+
 
 
 /* ==========================================================================

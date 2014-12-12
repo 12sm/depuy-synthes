@@ -83,23 +83,17 @@
   function getInfoWindow(marker){
     google.maps.event.addListener(marker, 'click', function(){
       closeInfoWindows();
-      var contentString = '<div class="row">'+
-                            '<div class="col-xs-12">'+
-                              '<img src="'+marker.photo+'">'+
-                              '<div class="row">'+
-                                '<div class="col-xs-7">'+
-                                  '<h2>'+marker.name+'</h2>'+
-                                '</div>'+
-                                '<div class="col-xs-7">'+
-                                  '<h2>'+marker.city+'</h2>'+
-                                '</div>'+
-                                '<div class="col-xs-5">'+
-                                  '<h2>></h2>'+
-                                '</div>'+
-                                '<div class="col-xs-7">'+
-                                  '<h2>'+marker.joint+'</h2>'+
-                                '</div>'+
-                              '</div>'+
+      var contentString = '<div class="row tool-tip">'+
+                            '<div class="col-xs-4">'+
+                              '<img src="'+marker.photo+'" class="marker-photo">'+
+                            '</div>'+
+                            '<div class="col-xs-6">'+
+                              '<h2 class="marker-name">'+marker.name+'</h2>'+
+                              '<h2 class="marker-city">'+marker.city+'</h2>'+
+                              '<h2 class="marker-joint">'+marker.joint+'</h2>'+
+                            '</div>'+
+                            '<div class="col-xs-2">'+
+                              '<img src="../images/pool/RightArrow@2x.png" class="toop-tip-arrow" />'+
                             '</div>'+
                           '</div>';
 
