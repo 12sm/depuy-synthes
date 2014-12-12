@@ -341,7 +341,7 @@
 
                   <div class="row">
                     <div class="col-sm-12 submit-checkbox">
-                      <p class="consent-form"><input type="checkbox"> I have read the <a href="#">Consent Form &rsaquo;</a></p>
+                      <p class="consent-form"><input type="checkbox"> I have read the <a href="#" data-toggle="modal" data-target="#myModal">Consent Form &rsaquo;</a></p>
                     </div>
                   </div>
 
@@ -356,6 +356,35 @@
                   </div>
 
                 </form>
+
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-body">
+                        <img src="../images/consent-form.jpg" class="consent-form" />
+                      </div>
+                      <div class="modal-footer">
+                        <div class="row">
+                          <div class="col-sm-9 agree-check">
+                            <input type="checkbox"> I have read and agree to this consent and release form
+                          </div>
+                          <div class="col-sm-3">
+                            <button type="button" class="close" data-dismiss="modal">
+                              <span class="close-text">CLOSE</span>
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
 
               </div>

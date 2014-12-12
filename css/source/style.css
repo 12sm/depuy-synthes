@@ -1324,6 +1324,65 @@ hr {
   /* ----- Story Form End --- */
 
 
+  /* ----- Modal Begin --- */
+
+  .modal-dialog {
+    width: 900px;
+    margin: 30px auto;
+  }
+
+  img.consent-form {
+    width: 100%;
+    height: auto;
+  }
+
+  .modal-body {
+    height: 580px;
+    overflow: scroll;
+  }
+
+  .agree-check {
+    text-align: left;
+    color:#FFF;
+    font-weight:400;
+    letter-spacing:.3px;
+    padding-top: 5px;
+  }
+
+  .modal-footer {
+    background: #A29368;
+    -webkit-box-shadow: 0px -10px 20px 1px rgba(0,0,0,.3);
+    -moz-box-shadow: 0px -10px 20px 1px rgba(0,0,0,.3);
+    box-shadow: 0px -10px 20px 1px rgba(0,0,0,.3);
+    z-index:2;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border:none;
+  }
+
+  button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: #A29368;
+    color: #FFF!important;
+    opacity: 1;
+    text-shadow: none;
+    border: 0;
+  }
+
+  span.close-text {
+    font-size: 16px;
+  }
+
+  span[aria-hidden="true"] {
+    font-size: 32px;
+  }
+
+
+  /* ----- Modal End --- */
+
 }
 
 /* Medium devices 992px and up */
