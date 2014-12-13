@@ -10,9 +10,9 @@
   function initialize(){
     $('.imgLiquidFill').imgLiquid();
     $('.flexslider').flexslider();
-    // $('.state-items > li').click(filterStates);
+    $('.state-items > li').click(filterStates);
     $('.joint-items > li').click(filterJoints);
-    // $('.hobby-items > li').click(filterHobbies);
+    $('.hobby-items > li').click(filterHobbies);
     addBullet();
   }
 
@@ -123,76 +123,51 @@
     }
   }
 
-  // function filterStates(){
-  //   var value = $(this).text();
-  //   console.log(value);
-  //   markers(null);
-  //   for(var i = 0; i < stories.length; i++){
-  //     if(stories[i][1] == value){
-  //       codeAddress(stories[i]);
-  //       showStateCards(value);
-  //     }
-  //   }
-  //   if(value == 'All'){
-  //     markers(map);
-  //   }
-  // }
+  function filterStates(){
+    var value = $(this).text();
+    var str = '.state';
+    var num = 1;
+    filter(value, str, num);
+  }
 
   function filterJoints(){
     var value = $(this).text();
+    var str = '.joint';
+    var num = 5;
+    filter(value, str, num);
+  }
+
+  function filterHobbies(){
+    var value = $(this).text();
+    var str = '.hobby';
+    var num = 6;
+    filter(value, str, num);
+  }
+
+  function filter(value, str, num){
     console.log(value);
     markers(null);
     for(var i = 0; i < stories.length; i++){
-      if(stories[i][5] == value){
+      if(stories[i][num] == value){
         codeAddress(stories[i]);
-        showJointCards(value);
+        showCards(value, str);
       }
     }
     if(value == 'All' || value == 'All  \u2713'){
       markers(map);
+      showCards(value, str);
     }
   }
 
-  // function filterHobbies(){
-  //   var value = $(this).text();
-  //   console.log(value);
-  //   markers(null);
-  //   for(var i = 0; i < stories.length; i++){
-  //     if(stories[i][6] == value){
-  //       codeAddress(stories[i]);
-  //       showHobbyCards(value);
-  //     }
-  //   }
-  //   if(value == 'All'){
-  //     markers(map);
-  //   }
-  // }
-
-  // function showStateCards(value){
-  //   $(".card-unit").each(function(){
-  //     if($(this).find(".state").attr("value") != value){
-  //       $this.addClass('hide');
-  //     }
-  //   });
-  // }
-
-  function showJointCards(value){
+  function showCards(value, str){
     $(".card-unit").each(function(){
       var that = $(this).parent();
       $(that).addClass('hidden');
-      if($(that).find(".joint").text() == value || value == 'All' || value == 'All  \u2713'){
+      if($(that).find(str).attr('value') == value || $(that).find(str).text() == value || value == 'All' || value == 'All  \u2713'){
         $(that).removeClass('hidden');
       }
     });
   }
-
-  // function showHobbyCards(value){
-  //   $(".card-unit").each(function(){
-  //     if($(this).find(".hobby").attr("value") != value){
-  //       $this.addClass('hide');
-  //     }
-  //   });
-  // }
 
   function addBullet(){
     $("#foottopnav > li > a > h6").each(function(){
