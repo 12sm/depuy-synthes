@@ -2,7 +2,7 @@
   'use strict';
 
   var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
-  var infowindows = [], allMarkers = [], stories = [], filtered = [], map, geocoder, lastElement = false;
+  var infowindows = [], allMarkers = [], stories = [], filtered = [], map, oms, geocoder, lastElement = false;
 
   window.onload = loadMap;
   $(document).ready(initialize);
@@ -28,6 +28,7 @@
       center       : {lat : 39.489, lng : -97.336}
     };
     map            = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+    oms            = new OverlappingMarkerSpiderfier(map, {markersWontMove: true, markersWontHide: true, keepSpiderfied : true});
     getInfo();
   }
 
@@ -70,6 +71,7 @@
     });
     allMarkers.push(marker);
     getInfoWindow(marker);
+    oms.addMarker(marker);
   }
 
   function getPath(joint){
@@ -92,7 +94,13 @@
   }
 
   function getInfoWindow(marker){
-    google.maps.event.addListener(marker, 'click', function(){
+    // oms.addListener('click', function(marker, event) {
+    //   iw.setContent(marker.desc);
+    //   iw.open(map, marker);
+    // });
+    // google.maps.event.addListener(marker, 'click', function(){
+    oms.addListener('click', function(marker, event) {
+      console.log(marker);
       closeInfoWindows();
       var contentString = '<div class="row tool-tip">'+
                             '<div class="col-xs-4">'+
@@ -126,25 +134,28 @@
     }
   }
 
-  function filterStates(){
+  function filterStates(e){
     var value = $(this).text();
     var str = '.state';
     var num = 1;
     filter(value, str, num);
+    e.preventDefault();
   }
 
-  function filterJoints(){
+  function filterJoints(e){
     var value = $(this).text();
     var str = '.joint';
     var num = 5;
     filter(value, str, num);
+    e.preventDefault();
   }
 
-  function filterHobbies(){
+  function filterHobbies(e){
     var value = $(this).text();
     var str = '.hobby';
     var num = 6;
     filter(value, str, num);
+    e.preventDefault();
   }
 
   function filter(value, str, num){
