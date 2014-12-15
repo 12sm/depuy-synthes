@@ -868,8 +868,10 @@ select {
   appearance:none;
 }
 
-select:after {
-  content:url("../images/pool/DropdownArrow@2x.png");
+.chosen-container-active .chosen-single {
+  border: none;
+  box-shadow: none;
+  background: #ECECEC;
 }
 
 /* ----- Tool Tip Styling Start -----*/
