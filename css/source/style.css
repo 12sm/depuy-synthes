@@ -859,6 +859,45 @@ ul.dropdown-menu.hobby-items {
   width: 174px;
 }
 
+select {
+  width: 70%;
+  background: transparent;
+  border: 0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+.chosen-container-active .chosen-single {
+  border: none!important;
+  box-shadow: none!important;
+  background: #ECECEC!important;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single,
+.chosen-container.chosen-container-single.chosen-container-active.chosen-with-drop {
+  border: none!important;
+  background-image: none!important;
+  box-shadow: none!important;
+}
+
+.chosen-container.chosen-container-single.chosen-container-active {
+  width: 85%!important;
+}
+
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 33px;
+  z-index: 1010;
+  width: 249px;
+  left: -52px!important;
+  border: none;
+  border-top: 0;
+  background: #ECECEC;
+  box-shadow: none;
+}
+
+
 /* ----- Tool Tip Styling Start -----*/
 
 img.marker-photo {
