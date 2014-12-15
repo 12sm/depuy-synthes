@@ -14,7 +14,11 @@
     $('.state-items').change(filterStates);
     $('.joint-items').change(filterJoints);
     $('.hobby-items').change(filterHobbies);
-    $(".drop-down").chosen({disable_search_threshold: 1.5, width: "95%"});
+    $('.state-items > li').click(filterStates);
+    $('.joint-items > li').click(filterJoints);
+    $('.hobby-items > li').click(filterHobbies);
+    $('.drop-down').chosen({allow_single_deselect: true, disable_search_threshold: 1.5});
+    $('.drop-down').trigger('chosen:activate');
   }
 
   function loadMap(){
@@ -97,7 +101,6 @@
     // });
     // google.maps.event.addListener(marker, 'click', function(){
     oms.addListener('click', function(marker, event) {
-      console.log(marker);
       closeInfoWindows();
       var contentString = '<div class="row tool-tip">'+
                             '<div class="col-xs-4">'+
@@ -113,7 +116,6 @@
                             '</div>'+
                           '</div>';
       var infowindow = new google.maps.InfoWindow({content : contentString});
-      console.log(infowindow);
       infowindows.push(infowindow);
       infowindow.open(map, marker);
     });
@@ -132,7 +134,12 @@
   }
 
   function filterStates(e){
-    var value = $(this).find("option:selected").text();
+    console.log(this);
+    if($(this).is("select")){
+      var value = $(this).find("option:selected").text();
+    }else{
+      var value = $(this).text();
+    }
     var str = '.state';
     var num = 1;
     filter(value, str, num);
@@ -140,7 +147,11 @@
   }
 
   function filterJoints(e){
-    var value = $(this).find("option:selected").text();
+    if($(this).is("select")){
+      var value = $(this).find("option:selected").text();
+    }else{
+      var value = $(this).text();
+    }
     var str = '.joint';
     var num = 5;
     filter(value, str, num);
@@ -148,7 +159,11 @@
   }
 
   function filterHobbies(e){
-    var value = $(this).find("option:selected").text();
+    if($(this).is("select")){
+      var value = $(this).find("option:selected").text();
+    }else{
+      var value = $(this).text();
+    }
     var str = '.hobby';
     var num = 6;
     filter(value, str, num);
@@ -156,7 +171,6 @@
   }
 
   function filter(value, str, num){
-    console.log(value);
     markers(null);
     for(var i = 0; i < stories.length; i++){
       if(stories[i][num] == value){
