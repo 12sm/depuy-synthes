@@ -258,9 +258,14 @@ form.navbar-form .form-group.input-group {
   margin: 20px auto;
 }
 
-.main-nav-active {
+a#ambassadors-nav-link.main-nav-active {
   background: #0B3D60!important;
   color: #FFF!important;
+}
+
+a#story-nav-link.main-nav-active {
+  background: #A39468;
+  color: #fff;
 }
 
 /* ==========================================================================
