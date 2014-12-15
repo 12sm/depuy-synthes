@@ -859,6 +859,19 @@ ul.dropdown-menu.hobby-items {
   width: 174px;
 }
 
+select {
+  width: 70%;
+  background: transparent;
+  border: 0;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+select:after {
+  content:url("../images/pool/DropdownArrow@2x.png");
+}
+
 /* ----- Tool Tip Styling Start -----*/
 
 img.marker-photo {
