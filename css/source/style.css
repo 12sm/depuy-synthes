@@ -60,7 +60,7 @@ a:hover {
   border: 1px solid #FFF;
   color: #989898;
   font-size: 20px;
-  padding: 7px 15px;
+  padding: 10px 15px;
   opacity:1;
   transition: opacity .3s ease;
 }
@@ -505,9 +505,9 @@ hr {
   border-radius: 0px 10px 0px 10px;
   border: 1px solid #979797;
   color: #FFFFFF;
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 100;
-  padding: 7px 15px;
+  padding: 13px 15px;
   opacity: 1;
   transition: opacity .3s ease;
 }
@@ -544,6 +544,8 @@ Story Show Page
   border-radius: 10px;
   margin-bottom: 20px;
   margin-top: 30px;
+  -webkit-box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
+  box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
 }
 
 .hero-unit > div {
@@ -1512,6 +1514,11 @@ hr {
     margin-top: 61px;
   }
 
+  #card-quote {
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
+  }
+
   /*-------- SLIDER BEGIN--------*/
   .slides > li > div {
     width: 100% !important;
@@ -1605,7 +1612,12 @@ textarea {
   }
 
   .grid {
-    margin-top: 40px;
+    margin-top: 50px;
+  }
+
+  #card-quote {
+    font-size: 18px;
+    margin: 0px 0px 20px 0px;
   }
 
   /*-------- SLIDER BEGIN--------*/
