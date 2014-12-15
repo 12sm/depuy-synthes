@@ -869,9 +869,19 @@ select {
 }
 
 .chosen-container-active .chosen-single {
-  border: none;
-  box-shadow: none;
-  background: #ECECEC;
+  border: none!important;
+  box-shadow: none!important;
+  background: #ECECEC!important;
+}
+
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: none!important;
+  background-image: none!important;
+  box-shadow: none!important;
+}
+
+.chosen-container.chosen-container-single.chosen-container-active {
+  width: 255px!important;
 }
 
 /* ----- Tool Tip Styling Start -----*/
