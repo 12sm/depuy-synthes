@@ -915,6 +915,7 @@ img.toop-tip-arrow {
   background: #FFF!important;
   border-radius: 30px;
   bottom: -10px;
+  max-width:300px;
 }
 
 .gm-style .gm-style-iw {
@@ -923,16 +924,30 @@ img.toop-tip-arrow {
   background-color: #FFF!important;
   border-radius: 10px;
   box-shadow: none!important;
-  height: 102px!important;
-  margin-top: 2px; /* adjust this when adding down caret */
+  height: 90px!important;
+  margin-top: 30px;
+  max-width: 290px;
 }
 
-/* .gm-style .gm-style-iw:after {
+.gm-style-iw::after {
   content: url("../../images/tool-tip-caret.png");
   text-align:center;
-  margin:0 auto;
-  padding-left:126px; */
+  margin:0px auto;
+  padding-left:126px;
 
+}
+
+div[style="cursor: default; width: 294px; height: 108px; position: absolute; left: 500px; top: 255px; z-index: 255;"] {
+  top: 280px!important;
+  height: 30px!important; /* Removed space between caret and div */
+}
+
+.gm-style-iw > div:first-child {
+  height: 78px!important;
+} /* this too */
+
+div:first-child > .gm-style-iw {
+  margin-top:35px;
 }
 
 
