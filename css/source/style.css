@@ -763,6 +763,10 @@ a p.expand-map:hover  {
   margin:20px 0px;
 }
 
+.filter-item-active:after {
+  content: " \2713";
+}
+
 a.all-item {
   background: #555555;
 }
