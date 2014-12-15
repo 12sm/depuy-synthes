@@ -14,6 +14,10 @@
     $('.joint-items > li').click(filterJoints);
     $('.hobby-items > li').click(filterHobbies);
     addBullet();
+    $(".drop-down").chosen({
+      disable_search_threshold: 1.5,
+      width: "95%"
+    });
   }
 
   function loadMap(){
@@ -100,10 +104,9 @@
                               '<h2 class="marker-joint">'+marker.joint+'</h2>'+
                             '</div>'+
                             '<div class="col-xs-2">'+
-                              '<img src="../images/pool/RightArrow@2x.png" class="toop-tip-arrow" />'+
+                              '<a href="storyShow.html"><img src="../images/pool/RightArrow@2x.png" class="toop-tip-arrow"></a>'+
                             '</div>'+
                           '</div>';
-
       var infowindow = new google.maps.InfoWindow({content : contentString});
       console.log(infowindow);
       infowindows.push(infowindow);
