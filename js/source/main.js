@@ -8,16 +8,13 @@
   $(document).ready(initialize);
 
   function initialize(){
-    $('.imgLiquidFill').imgLiquid();
-    $('.flexslider').flexslider();
-    $('.state-items > li').click(filterStates);
-    $('.joint-items > li').click(filterJoints);
-    $('.hobby-items > li').click(filterHobbies);
     addBullet();
-    $(".drop-down").chosen({
-      disable_search_threshold: 1.5,
-      width: "95%"
-    });
+    $('.flexslider').flexslider();
+    $('.imgLiquidFill').imgLiquid();
+    $('.state-items').change(filterStates);
+    $('.joint-items').change(filterJoints);
+    $('.hobby-items').change(filterHobbies);
+    $(".drop-down").chosen({disable_search_threshold: 1.5, width: "95%"});
   }
 
   function loadMap(){
@@ -25,10 +22,10 @@
     var mapOptions = {
       zoom         : 5,
       scrollwheel  : false,
-      center       : {lat : 39.489, lng : -97.336}
+      center       : {lat: 39.489, lng: -97.336}
     };
     map            = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    oms            = new OverlappingMarkerSpiderfier(map, {markersWontMove: true, markersWontHide: true, keepSpiderfied : true});
+    oms            = new OverlappingMarkerSpiderfier(map, {markersWontMove: true, markersWontHide: true, keepSpiderfied: true});
     getInfo();
   }
 
@@ -135,7 +132,7 @@
   }
 
   function filterStates(e){
-    var value = $(this).text();
+    var value = $(this).find("option:selected").text();
     var str = '.state';
     var num = 1;
     filter(value, str, num);
@@ -143,7 +140,7 @@
   }
 
   function filterJoints(e){
-    var value = $(this).text();
+    var value = $(this).find("option:selected").text();
     var str = '.joint';
     var num = 5;
     filter(value, str, num);
@@ -151,7 +148,7 @@
   }
 
   function filterHobbies(e){
-    var value = $(this).text();
+    var value = $(this).find("option:selected").text();
     var str = '.hobby';
     var num = 6;
     filter(value, str, num);
@@ -167,7 +164,11 @@
         showCards(value, str);
       }
     }
-    if(value == 'All' || value == 'All  \u2713'){
+    if ( value == 'All'
+      || value == 'All  \u2713'
+      || value == 'States'
+      || value == 'Joint Replacement'
+      || value == 'Activity/Hobby'){
       markers(map);
       showCards(value, str);
     }
@@ -177,7 +178,13 @@
     $(".card-unit").each(function(){
       var that = $(this).parent();
       $(that).addClass('hidden');
-      if($(that).find(str).attr('value') == value || $(that).find(str).text() == value || value == 'All' || value == 'All  \u2713'){
+      if ( value == $(that).find(str).attr('value')
+        || value == $(that).find(str).text()
+        || value == 'All'
+        || value == 'All  \u2713'
+        || value == 'States'
+        || value == 'Joint Replacement'
+        || value == 'Activity/Hobby'){
         $(that).removeClass('hidden');
       }
     });
