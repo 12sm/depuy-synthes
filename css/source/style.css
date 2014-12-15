@@ -258,6 +258,11 @@ form.navbar-form .form-group.input-group {
   margin: 20px auto;
 }
 
+.main-nav-active {
+  background: #0B3D60!important;
+  color: #FFF!important;
+}
+
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -1166,6 +1171,15 @@ Media Queries
     margin-top:40px;
   }
 
+  ul.dropdown-menu.show-filter-list {
+    float: right;
+    width: 150px;
+    top: 52px;
+    right: 0!important;
+    position: absolute;
+    left: 0px;
+  }
+
 /*-------- NAVBAR BEGIN--------*/
   .navbar-default {
     height: 100px;
@@ -1517,6 +1531,16 @@ hr {
   #card-quote {
     font-size: 18px;
     margin: 0px 0px 20px 0px;
+    height: 100px;
+  }
+
+  ul.dropdown-menu.show-filter-list {
+    float: right;
+    width: 140px;
+    top: 52px;
+    right: 0!important;
+    position: absolute;
+    left: 143px;
   }
 
   /*-------- SLIDER BEGIN--------*/
@@ -1618,6 +1642,19 @@ textarea {
   #card-quote {
     font-size: 18px;
     margin: 0px 0px 20px 0px;
+  }
+
+  ul.dropdown-menu.show-filter-list {
+    float: right;
+    width: 140px;
+    top: 52px;
+    right: 0!important;
+    position: absolute;
+    left: 210px;
+  }
+
+  #card-quote {
+    height: 100px;
   }
 
   /*-------- SLIDER BEGIN--------*/
