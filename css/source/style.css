@@ -85,7 +85,11 @@ a:hover {
 }
 
 .grid {
-  margin-top: 15px;
+  margin-top: 20px;
+}
+
+.container .grid:first-child {
+  margin-top: 50px;
 }
 
 #wrap {
@@ -579,8 +583,7 @@ Story Show Page
 .card-unit {
   background-color: #FFFFFF;
   border-radius: 10px;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 40px;
   -webkit-box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
   box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
 }
@@ -1206,7 +1209,11 @@ Media Queries
   }
 
   .grid {
-    margin-top: 5px;
+    margin-top: 20px;
+  }
+
+  .container .grid:first-child {
+    margin-top: 50px;
   }
 
   #wrap {
@@ -1338,6 +1345,10 @@ hr {
 .card-photo {
   height: 90px;
   width: 90px;
+}
+
+.card-unit {
+  margin-bottom:20px;
 }
 
 /*-------- STORY CARD END --------*/
@@ -1548,7 +1559,11 @@ hr {
 @media (min-width: 992px) {
 
   .grid {
-    margin-top: 37px;
+    margin-top: 20px;
+  }
+
+  .container .grid:first-child {
+    margin-top: 50px;
   }
 
   form.navbar-form .form-group.input-group {
@@ -1579,6 +1594,10 @@ hr {
 
   .card-unit h6 {
     font-size: 12px;
+  }
+
+  .card-unit {
+    margin-bottom:20px;
   }
 
   ul.dropdown-menu.show-filter-list {
@@ -1680,6 +1699,10 @@ textarea {
   }
 
   .grid {
+    margin-top: 20px;
+  }
+
+  .container .grid:first-child {
     margin-top: 50px;
   }
 
@@ -1703,6 +1726,10 @@ textarea {
 
   #card-quote {
     height: 100px;
+  }
+
+  .card-unit {
+    margin-bottom:20px;
   }
 
   /*-------- SLIDER BEGIN--------*/
