@@ -1323,10 +1323,6 @@ Media Queries
     margin-top: 50px;
   }
 
-  #wrap {
-    padding-top: 100px;
-  }
-
   h2#sh1, h2#sh2, span#sh2 {
     font-size: 24px;
     margin-top:40px;
@@ -1341,45 +1337,6 @@ Media Queries
     left: 0px;
   }
 
-/*-------- NAVBAR BEGIN--------*/
-  .navbar-default {
-    height: 100px;
-    border: none;
-    z-index: 3;
-  }
-
-  .navbar-brand {
-    height: 100px;
-    width: 30%;
-    line-height: 100px;
-  }
-
-  .navbar-collapse.collapse {
-    width: 70%;
-  }
-
-  #nav-logo {
-    background-size: contain;
-    height: 40px;
-    width: 260px;
-    margin: 11px 0px;
-  }
-
-  ul.nav.navbar-nav.navbar-right li a {
-    font-size: 16px;
-    line-height:100px;
-  }
-
-  ul.nav.navbar-nav.navbar-right li form {
-    line-height: 100px;
-  }
-
-  form.navbar-form .form-group.input-group {
-    width: 140px;
-  }
-
-  .shadow-top {padding-top:100px;}
-/*-------- NAVBAR END --------*/
 
 
 
@@ -1756,6 +1713,51 @@ hr {
     position: absolute;
     left: 143px;
   }
+
+  #wrap {
+    padding-top: 100px;
+  }
+
+  /*-------- NAVBAR BEGIN--------*/
+  .navbar-default {
+    height: 100px;
+    border: none;
+    z-index: 3;
+  }
+
+  .navbar-brand {
+    height: 100px;
+    width: 30%;
+    line-height: 100px;
+  }
+
+  .navbar-collapse.collapse {
+    width: 70%;
+  }
+
+  #nav-logo {
+    background-size: contain;
+    height: 40px;
+    width: 260px;
+    margin: 11px 0px;
+  }
+
+  ul.nav.navbar-nav.navbar-right li a {
+    font-size: 16px;
+    line-height:100px;
+  }
+
+  ul.nav.navbar-nav.navbar-right li form {
+    line-height: 100px;
+  }
+
+  form.navbar-form .form-group.input-group {
+    width: 140px;
+  }
+
+  .shadow-top {padding-top:100px;}
+  /*-------- NAVBAR END --------*/
+
 
   /*-------- SLIDER BEGIN--------*/
   .slides > li > div {
