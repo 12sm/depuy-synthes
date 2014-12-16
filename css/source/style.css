@@ -1066,6 +1066,10 @@ form.form-inline button.btn.btn-default.dropdown-toggle {
   margin-bottom: -5px;
 }
 
+.add-a-photo button.btn.btn-default.dropdown-toggle {
+  margin-bottom: 50px;
+}
+
 img.activity-icon {
   width: 40px;
   display: block;
@@ -1428,21 +1432,17 @@ hr {
   }
 
   .btn-group.state-dropdown, .btn-group.add-a-photo {
-    width: 251px;
+    width: 100%;
+  }
+
+  .btn-group.add-a-photo {
+    width:251px;
   }
 
   .story-unit.hero-unit.form-unit .form-control {
-    width: 207px;
-    margin-right: 20px;
+    width: 100%;
+    margin-right: 0;
     margin-bottom: 23px;
-  }
-
-  input.form-control.zip {
-    width: 90px!important;
-  }
-
-  input.form-control.city {
-    width: 280px!important;
   }
 
   span.no-file-chosen {
@@ -1656,23 +1656,20 @@ blockquote {
 
 /*-------- Story Form Begin --------*/
 
-
 .story-unit.hero-unit.form-unit .form-control {
-  width: 280px;
-  margin-right: 20px;
+  width: 100%;
+  margin-right: 0;
   margin-bottom: 23px;
 }
 
-input.form-control.city {
-  width: 220px!important;
-}
-
 .btn-group.state-dropdown, .btn-group.add-a-photo {
-  width: 190px;
+  width: 100%;
 }
 
 span.no-file-chosen {
   padding-left: 20px;
+  height: 44px;
+  padding-top: 12px;
 }
 
 img.activity-icon {
@@ -1750,5 +1747,13 @@ textarea {
   /*-------- SLIDER END--------*/
 
   footer {padding-bottom:20px;}
+
+  .checkbox-options .col-lg-1 {
+    padding: 0px 7px;
+  }
+
+  span.no-file-chosen {
+    padding-left: 0px;
+  }
 
 }
