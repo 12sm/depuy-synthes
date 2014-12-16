@@ -343,6 +343,22 @@ Home Page
 
 }
 
+.flex-direction-nav li a.next {
+  background: url(../../images/pool/heroarrowright.png)!important;
+  background-size: cover;
+  height: 56px;
+  background-repeat: no-repeat;
+  width: 26px;
+}
+
+.flex-direction-nav li a.prev {
+  background: url(../../images/pool/heroarrowleft.png)!important;
+  background-size: cover;
+  height: 56px;
+  background-repeat: no-repeat;
+  width: 26px;
+}
+
 .flexslider {
   border: none !important;
   height: 240px;
