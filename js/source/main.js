@@ -176,6 +176,8 @@
     }else{
       var value = $(this).text();
       $('.select22').select2('val', value);
+      $(this).children().addClass('filter-item-active');
+      $(this).siblings().children().removeClass('filter-item-active');
     }
     var str = '.joint';
     var num = 5;

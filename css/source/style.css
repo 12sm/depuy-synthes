@@ -829,6 +829,8 @@ a p.expand-map:hover  {
 
 .filter-item-active:after {
   content: " \2713";
+  position: absolute;
+  margin-left: 3px;
 }
 
 a.all-item {
