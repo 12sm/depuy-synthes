@@ -360,7 +360,7 @@ Home Page
   display: block;
   background: transparent !important;
   text-indent: 0px;
-  cursor: pointer;  
+  cursor: pointer;
 }
 .flex-direction-nav li a.next {
   background: url(../../images/pool/heroarrowright.png)!important;
@@ -481,6 +481,8 @@ hr {
 
 .card-line hr {
   margin-top: 20px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 .card-header {
@@ -496,13 +498,13 @@ hr {
 .card-footer h3 {
   font-size: 14px;
   color: #FFF;
-  margin: 15px 0px 15px 0px;
+  margin: 15px 0px 15px 7px;
 }
 
 .card-footer a h5 {
   font-size: 14px;
   color: rgba(255,255,255,.5);
-  margin: 15px 0px 15px 0px;
+  margin: 15px 7px 15px 0px;
   text-decoration:none;
   transition:color .3s ease;
 }
@@ -536,10 +538,12 @@ hr {
   font-size: 20px;
   color: #989898;
   margin-bottom: 0px;
+  margin-right: -3px;
 }
 
 .card-unit h6 {
   margin-top: 0px;
+  margin-right: -3px;
   font-size: 10px;
   color: #989898;
 }
@@ -549,6 +553,7 @@ hr {
   font-size: 14px;
   color: #989898;
   letter-spacing: .2px;
+  margin: 0px 7px;
 }
 
 .ambassamore {
@@ -1350,7 +1355,7 @@ hr {
 }
 
 #card-quote {
-  height: 80px;
+  height: 110px;
 }
 
 .card-photo {
@@ -1613,7 +1618,7 @@ hr {
 
   #card-quote {
     font-size: 18px;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 15px 20px 15px;
     height: 100px;
   }
 
@@ -1623,6 +1628,23 @@ hr {
 
   .card-unit {
     margin-bottom:20px;
+  }
+
+  .card-unit h5, .card-unit h6 {
+    margin-right: 5px;
+  }
+
+  .card-footer h3 {
+    margin: 15px 0px 15px 15px;
+  }
+
+  .card-footer a h5 {
+    margin: 15px 15px 15px 0px;
+  }
+
+  .card-line hr {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   ul.dropdown-menu.show-filter-list {
