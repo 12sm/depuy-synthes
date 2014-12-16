@@ -117,7 +117,7 @@
                               '<h2 class="marker-joint">'+marker.joint+'</h2>'+
                             '</div>'+
                             '<div class="col-xs-2">'+
-                              '<a href="storyShow.html"><img src="../images/pool/RightArrow@2x.png" class="toop-tip-arrow"></a>'+
+                              '<a href="storyShow.html"><img src="../images/pool/rightarrow@2x.png" class="toop-tip-arrow"></a>'+
                             '</div>'+
                           '</div>';
       var infowindow = new google.maps.InfoWindow({content : contentString});
