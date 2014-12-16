@@ -14,6 +14,7 @@
       manualControls: ".flex-control-nav li"
     });
     $('.imgLiquidFill').imgLiquid();
+    $('#expander').click(collapseMap);
     $('.state-items').change(filterStates);
     $('.joint-items').change(filterJoints);
     $('.hobby-items').change(filterHobbies);
@@ -137,11 +138,27 @@
     }
   }
 
+  function collapseMap(){
+    if($('#map-canvas').css('height') == '600px'){
+      $('#map-canvas').css('height', '120px');
+      $('#collapseText').text('Expand Map ');
+      var fontArrow = $('<i>');
+      fontArrow.addClass('fa fa-long-arrow-down');
+      $('#collapseText').append(fontArrow);
+    }else{
+      $('#map-canvas').css('height', '600px');
+      $('#collapseText').text('Collapse Map ');
+      var fontArrow = $('<i>');
+      fontArrow.addClass('fa fa-long-arrow-up');
+      $('#collapseText').append(fontArrow);
+    }
+  }
+
   function filterStates(e){
     $('.select22').select2('val', '');
     $('.select23').select2('val', '');
     if($(this).is("select")){
-      var value = $(this).find("option:selected").text();
+      var value = $(this).find('option:selected').text();
     }else{
       var value = $(this).text();
     }

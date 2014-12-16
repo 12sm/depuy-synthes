@@ -194,7 +194,7 @@ form.navbar-form .form-group.input-group {
   background-image: url('../../images/mobileLogo.png');
   background-repeat: no-repeat;
   background-size:contain;
-  height: 90px;
+  height: 30px;
   width: 190px;
   vertical-align: middle;
   margin: 0;
@@ -1269,7 +1269,7 @@ Media Queries
 
   #nav-logo {
     background-size: contain;
-    height: 100px;
+    height: 40px;
     width: 260px;
     margin: 11px 0px;
   }
