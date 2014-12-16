@@ -17,8 +17,9 @@
     $('.state-items > li').click(filterStates);
     $('.joint-items > li').click(filterJoints);
     $('.hobby-items > li').click(filterHobbies);
-    $('.drop-down').chosen({allow_single_deselect: true, disable_search_threshold: 1.5});
-    $('.drop-down').trigger('chosen:activate');
+    $('.select21').select2({placeholder: "States:"});
+    $('.select22').select2({placeholder: "Joint Replacement:"});
+    $('.select23').select2({placeholder: "Activity/Hobby:"});
   }
 
   function loadMap(){
@@ -134,7 +135,8 @@
   }
 
   function filterStates(e){
-    console.log(this);
+    $('.select22').select2('val', '');
+    $('.select23').select2('val', '');
     if($(this).is("select")){
       var value = $(this).find("option:selected").text();
     }else{
@@ -147,10 +149,13 @@
   }
 
   function filterJoints(e){
+    $('.select21').select2('val', '');
+    $('.select23').select2('val', '');
     if($(this).is("select")){
       var value = $(this).find("option:selected").text();
     }else{
       var value = $(this).text();
+      $('.select22').select2('val', value);
     }
     var str = '.joint';
     var num = 5;
@@ -159,6 +164,8 @@
   }
 
   function filterHobbies(e){
+    $('.select21').select2('val', '');
+    $('.select22').select2('val', '');
     if($(this).is("select")){
       var value = $(this).find("option:selected").text();
     }else{
