@@ -92,6 +92,18 @@ a:hover {
   margin-top: 50px;
 }
 
+.mapped.card-unit.hero-unit {
+  margin-bottom: 40px;
+}
+
+.mapped.card-unit.hero-unit {
+  margin-bottom: 40px;
+}
+
+.filter-row-colorful {
+  margin-bottom: 45px;
+}
+
 #wrap {
   min-height: 80%;
   padding-top: 55px;
@@ -1214,6 +1226,79 @@ span[aria-hidden="true"] {
 
 /* ----- Modal End --- */
 
+/* ----- Select Begin --- */
+
+div#select2-drop {
+  width: 160px!important;
+  background: #ECECEC;
+  border: 1px solid #cbcbcb;
+  border-radius: 0px;
+  text-align: left;
+  font-size: 14px;
+  color: #555555;
+  padding-top: 10px;
+}
+
+div#s2id_autogen5 {
+  background: #ECECEC;
+  width: 160px;
+  border: 1px solid #cbcbcb;
+  height: 34px;
+}
+
+.select2-container .select2-choice {
+  height: 100%!important;
+  padding: 3px 10px!important;
+  border: none!important;
+  color: #555!important;
+  font-size: 14px!important;
+  border-radius: 0px!important;
+  background-color: transparent!important;
+  background-image: none!important;
+}
+
+.select2-container .select2-choice .select2-arrow b {
+  background: url('../../images/pool/dropdownarrow@2x.png') no-repeat 0 1px!important;
+  background-size: 18px 10px!important;
+  margin: 10px 0px!important;
+}
+
+.select2-container .select2-choice .select2-arrow {
+  width: 30px!important;
+  height: 100%!important;
+  border-left: none!important;
+  border-radius: 0px!important;
+  background: #ECECEC!important;
+  background-image: none!important;
+  background-image: none!important;
+  background-image: none!important;
+  filter: none!important;
+  background-image: none!important;
+}
+
+.select2-results .select2-highlighted {
+  background: #0b3d60!important;
+}
+
+.select2-results {
+  padding: 0px!important;
+  margin: 0px!important;
+}
+
+.select2-results li {
+  padding: 5px 0px!important;
+}
+
+.select2-results li:first-child {
+  margin-top:5px;
+}
+
+.mobile-filter-row {
+  margin-bottom: 50px;
+}
+
+/* ----- Select End --- */
+
 
 
 /* ==========================================================================
@@ -1799,7 +1884,8 @@ textarea {
   }
 
   #card-quote {
-    height: 100px;
+    font-size: 18px;
+    margin: 0px 15px 20px 15px;
   }
 
   .card-unit {
