@@ -8,7 +8,7 @@
   $(document).ready(initialize);
 
   function initialize(){
-    addBullet();
+    // addBullet();
     $('.flexslider').flexslider();
     $('.imgLiquidFill').imgLiquid();
     $('.state-items').change(filterStates);
@@ -211,13 +211,13 @@
     });
   }
 
-  function addBullet(){
-    $("#foottopnav > li > a > h6").each(function(){
-      if (lastElement && lastElement.offset().top != $(this).offset().top) {
-        $(lastElement).addClass("nobullet");
-      }
-      lastElement = $(this);
-    }).last().addClass("nobullet");
-  }
+  // function addBullet(){
+  //   $("#foottopnav > li > a > h6").each(function(){
+  //     if (lastElement && lastElement.offset().top != $(this).offset().top) {
+  //       $(lastElement).addClass("nobullet");
+  //     }
+  //     lastElement = $(this);
+  //   }).last().addClass("nobullet");
+  // }
 
 })();
