@@ -351,9 +351,15 @@ Home Page
 .slides > li > div {
   width: 100% !important;
   height: 240px;
-
 }
-
+.flex-control-nav li a {
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: transparent !important;
+  text-indent: 0px;
+  cursor: pointer;  
+}
 .flex-direction-nav li a.next {
   background: url(../../images/pool/heroarrowright.png)!important;
   background-size: cover;
@@ -369,7 +375,9 @@ Home Page
   background-repeat: no-repeat;
   width: 26px;
 }
-
+.flex-control-nav li{
+  list-style: none;
+}
 .flexslider {
   border: none !important;
   height: 240px;
@@ -427,10 +435,15 @@ Home Page
 .flex-control-nav, .flex-direction-nav {
   display:none;
 }
-.flex-control-nav a {
+.flex-control-nav li a {
   color: #fff;
   opacity: .6;
   margin: 0px 5px;
+}
+.flex-control-nav li.active a{
+  color: #c9c9c9;
+  opacity: .6;
+  cursor: none;
 }
 /*-------- SLIDER END--------*/
 

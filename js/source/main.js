@@ -9,7 +9,10 @@
 
   function initialize(){
     // addBullet();
-    $('.flexslider').flexslider();
+    $('.flexslider').flexslider({
+      controlsContainer: ".flexslider-container",
+      manualControls: ".flex-control-nav li"
+    });
     $('.imgLiquidFill').imgLiquid();
     $('.state-items').change(filterStates);
     $('.joint-items').change(filterJoints);
