@@ -192,7 +192,7 @@ form.navbar-form .form-group.input-group {
   background-image: url('../../images/mobileLogo.png');
   background-repeat: no-repeat;
   background-size:contain;
-  height: 90px;
+  height: 30px;
   width: 190px;
   vertical-align: middle;
   margin: 0;
@@ -407,8 +407,8 @@ Home Page
 }
 
 .slide_text {
-  width:100%;
-  padding:0px 60px 0px 80px;
+  width: 100%;
+  padding: 0px 60px 0px 20px;
 }
 
 .inner-shadow {
@@ -603,7 +603,7 @@ Story Show Page
 .card-unit {
   background-color: #FFFFFF;
   border-radius: 10px;
-  margin-bottom: 40px;
+  margin: 0px auto 40px auto;
   -webkit-box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
   box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
 }
@@ -1070,10 +1070,16 @@ form.form-inline button.btn.btn-default.dropdown-toggle {
 }
 
 img.activity-icon {
-  width: 40px;
+  width: auto;
   display: block;
   padding-bottom: 10px;
   margin: 0 auto;
+  max-height: 50px;
+}
+
+img.activity-icon.swimming-icon {
+  max-width: 45px;
+  padding: 15px 0px;
 }
 
 .list-of-activity-items {
@@ -1269,7 +1275,7 @@ Media Queries
 
   #nav-logo {
     background-size: contain;
-    height: 100px;
+    height: 40px;
     width: 260px;
     margin: 11px 0px;
   }
@@ -1320,9 +1326,10 @@ Media Queries
   }
 
   .slide_text {
-    width:60%;
-    padding:0px 80px;
-    padding-top:70px;
+    width: 60%;
+    padding: 0px 80px 0px 135px;
+    padding-top: 70px;
+    margin: 0!Important;
   }
 
   .flex-control-nav {
@@ -1450,6 +1457,7 @@ hr {
     width: 100%;
     margin-right: 0;
     margin-bottom: 23px;
+    height: 45px;
   }
 
   span.no-file-chosen {
@@ -1468,10 +1476,14 @@ hr {
   }
 
   .activity-option {
-    width:auto;
-    display:block;
-    float:left;
-    margin: 0px 30px 0px 0px;
+    width: auto;
+    display: block;
+    float: left;
+    margin: 0px 55px 0px 0px;
+  }
+
+  .activity-option.last {
+    margin-right: 0px;
   }
 
   .other-option {
@@ -1519,6 +1531,10 @@ hr {
 
   .submit-checkbox {
     margin-top: 16px;
+  }
+
+  .add-a-photo button.btn.btn-default.dropdown-toggle {
+    margin-bottom: 0px;
   }
 
   /* ----- Story Form End --- */
@@ -1675,6 +1691,13 @@ hr {
     font-size: 72px;
   }
 
+  .slide_text {
+    width: 60%;
+    padding: 0px 80px 0px 130px;
+    padding-top: 70px;
+    margin: 0!important;
+  }
+
 
 /*-------- SLIDER END--------*/
 
@@ -1727,6 +1750,13 @@ textarea {
   height: 40px;
 }
 
+.activity-option, .activity-option.last {
+  width: auto;
+  display: block;
+  float: left;
+  margin: 0px 45px 0px 0px;
+}
+
 
 /*-------- Story Form End --------*/
 
@@ -1776,6 +1806,10 @@ textarea {
     margin-bottom:30px;
   }
 
+  .shadowB.container {
+    max-width: 100%!important;
+  }
+
   /*-------- SLIDER BEGIN--------*/
   .slides > li > div {
     width: 100% !important;
@@ -1793,9 +1827,10 @@ textarea {
   }
 
   .slide_text {
-    width:55%;
-    padding-top:100px;
-    padding: 100px 0px 0px 130px;
+    width: 55%;
+    padding-top: 100px;
+    padding: 100px 0px 0px 80px;
+    margin: 0!important;
   }
 
   .slide_byline {
@@ -1803,6 +1838,9 @@ textarea {
     margin-top:20px;
     font-size:24px;
   }
+
+
+
   /*-------- SLIDER END--------*/
 
   footer {padding-bottom:20px;}

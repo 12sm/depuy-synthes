@@ -14,6 +14,7 @@
   <script src="../js/vendor/bootstrap.js"></script>
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk"></script>
   <script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox.js"></script>
+  <script src="../js/vendor/expand.min.js"></script>
   <script src="../js/vendor/imgLiquid.js"></script>
   <script src="../js/vendor/jquery.flexslider.js"></script>
   <script src="../js/vendor/spiderfy.min.js"></script>
@@ -49,7 +50,7 @@
   </nav>
   <div id="wrap">
     <div id="main" class="container-fluid">
-      <div class="row">
+      <div id="mapframe" class="row">
         <div class="col-xs-12 nopad">
           <div class="row map-filter hidden-xs">
             <div class="col-sm-12">
@@ -136,16 +137,13 @@
               </div>
             </div>
           </div>
-          <div class="row map-filter expand-collapse">
-            <div class="col-sm-12">
-              <a href="#">
-                <p class="collapse-map">Collapse Map <i class="fa fa-long-arrow-up"></i></p>
-              </a>
-              <a href="#">
-              <p class="expand-map">Expand Map <i class="fa fa-long-arrow-down"></i></p>
-              </a>
+            <div class="row map-filter expand-collapse">
+              <div class="col-sm-12">
+                <a id="expander" href="#">
+                  <p id="collapseText" class="collapse-map">Collapse Map <i class="fa fa-long-arrow-up"></i></p>
+                </a>
+              </div>
             </div>
-          </div>
           <div class="hidden-xs" id="map-canvas">
           </div>
         </div>
@@ -822,11 +820,6 @@
             </li>
             <li>
               <a href="#">
-                <h6>Site Map</h6>
-              </a>
-            </li>
-            <li>
-              <a href="#">
                 <h6>Safe Harbor</h6>
               </a>
             </li>
@@ -856,7 +849,7 @@
       <div class="row">
         <div class="col-xs-12">
           <ul class="nopad text-left" id="footbotnav">
-            <a href="#" class="bot active">
+            <a href="#" class="bot highlight">
               <li>
                 <h6>Find A Physician</h6>
               </li>
