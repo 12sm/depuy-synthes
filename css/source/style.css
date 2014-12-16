@@ -399,7 +399,7 @@ Home Page
 }
 
 .slide_byline {
-  color: #FFF;
+  color: rgba(255,255,255, .75);
   font-size: 13px;
   font-weight: 200;
   line-height: 1.4;
