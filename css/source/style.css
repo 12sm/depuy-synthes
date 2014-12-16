@@ -423,7 +423,11 @@ Home Page
 .flex-control-nav, .flex-direction-nav {
   display:none;
 }
-
+.flex-control-nav a {
+  color: #fff;
+  opacity: .6;
+  margin: 0px 5px;
+}
 /*-------- SLIDER END--------*/
 
 
