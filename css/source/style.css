@@ -445,7 +445,7 @@ Home Page
 .flex-control-nav li.active a{
   color: #c9c9c9;
   opacity: .6;
-  cursor: none;
+  cursor: initial;
 }
 /*-------- SLIDER END--------*/
 
@@ -1217,7 +1217,7 @@ Media Queries
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices 768px and up */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 
   .container {
     min-width: 750px;
@@ -1744,7 +1744,7 @@ textarea {
   }
 
   .card-unit {
-    margin-bottom:20px;
+    margin-bottom:30px;
   }
 
   /*-------- SLIDER BEGIN--------*/
