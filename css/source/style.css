@@ -33,7 +33,9 @@ h6 {
   font-weight: 200;
   letter-spacing: 0.4px;
 }
-
+h6:after{
+  display: none;
+}
 .blue-accent {color:#0B3D60;}
 
 p {
@@ -1310,7 +1312,9 @@ Media Queries
 
 /* Small devices 768px and up */
 @media only screen and (min-width: 768px) {
-
+  h6:after{
+    display: inline-block;
+  }
   .container {
     min-width: 750px;
   }
