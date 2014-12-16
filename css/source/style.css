@@ -321,10 +321,17 @@ ul#foottopnav li {
   text-decoration:none;
 }
 
-.bot.active {
+.bot.highlight {
   color: #0b3d60;
   background: #FFF;
   transition:opacity .3s ease;
+}
+
+.bot.highlight:hover {
+  color: #FFF;
+  background: rgba(255,255,255,.25);
+
+  transition:background .3s ease, color .3s ease;
 }
 
 footer p {
