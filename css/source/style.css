@@ -217,17 +217,19 @@ form.navbar-form .form-group.input-group {
 
 .navbar-collapse.collapse.in {
   width: 106%;
-  background: #FFF;
+  background: rgba(11,61,96,.5);
   text-align: center;
   padding: 0;
   margin-top: 2px;
   border: none;
   border-top: 1px solid #0B3D60!important;
+  padding-bottom: 100%;
+  height: 111px!important;
 }
 
-a#ambassadors-nav-link,
-a#story-nav-link {
+a#ambassadors-nav-link, a#story-nav-link {
   width: 100%;
+  background: #FFF;
 }
 
 .navbar-default .navbar-form {border:none;}
