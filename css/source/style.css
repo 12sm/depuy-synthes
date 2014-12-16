@@ -407,8 +407,8 @@ Home Page
 }
 
 .slide_text {
-  width:100%;
-  padding:0px 60px 0px 80px;
+  width: 100%;
+  padding: 0px 60px 0px 20px;
 }
 
 .inner-shadow {
@@ -1320,9 +1320,10 @@ Media Queries
   }
 
   .slide_text {
-    width:60%;
-    padding:0px 80px;
-    padding-top:70px;
+    width: 60%;
+    padding: 0px 80px 0px 135px;
+    padding-top: 70px;
+    margin: 0!Important;
   }
 
   .flex-control-nav {
@@ -1675,6 +1676,13 @@ hr {
     font-size: 72px;
   }
 
+  .slide_text {
+    width: 60%;
+    padding: 0px 80px 0px 130px;
+    padding-top: 70px;
+    margin: 0!important;
+  }
+
 
 /*-------- SLIDER END--------*/
 
@@ -1776,6 +1784,10 @@ textarea {
     margin-bottom:30px;
   }
 
+  .shadowB.container {
+    max-width: 100%!important;
+  }
+
   /*-------- SLIDER BEGIN--------*/
   .slides > li > div {
     width: 100% !important;
@@ -1793,9 +1805,10 @@ textarea {
   }
 
   .slide_text {
-    width:55%;
-    padding-top:100px;
-    padding: 100px 0px 0px 130px;
+    width: 55%;
+    padding-top: 100px;
+    padding: 100px 0px 0px 80px;
+    margin: 0!important;
   }
 
   .slide_byline {
@@ -1803,6 +1816,9 @@ textarea {
     margin-top:20px;
     font-size:24px;
   }
+
+
+
   /*-------- SLIDER END--------*/
 
   footer {padding-bottom:20px;}
