@@ -23,9 +23,6 @@
     $('.select21').select2({placeholder: "States:"});
     $('.select22').select2({placeholder: "Joint Replacement:"});
     $('.select23').select2({placeholder: "Activity/Hobby:"});
-    $('.navbar-toggle').click(function () {
-      $('.nav-overlay').toggleClass('hide');
-    })
   }
 
   function loadMap(){
