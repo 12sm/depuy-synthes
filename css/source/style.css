@@ -83,7 +83,6 @@ a:hover {
 }
 
 .container {
-  margin: 0 auto !important;
 }
 
 
@@ -1405,6 +1404,7 @@ Media Queries
     display: initial;
   }
   .container {
+    margin: 0 auto !important;
     min-width: 750px;
     padding: 0 15px;
   }
