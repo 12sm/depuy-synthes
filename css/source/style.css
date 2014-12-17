@@ -1045,7 +1045,11 @@ div[style="cursor: default; width: 294px; height: 108px; position: absolute; lef
 
 .gm-style-iw > div:first-child {
   height: 78px!important;
+  overflow: hidden !important;
 } /* this too */
+.gm-style-iw > div:first-child>div{
+  overflow: hidden !important;
+}
 
 div:first-child > .gm-style-iw {
   margin-top:35px;
