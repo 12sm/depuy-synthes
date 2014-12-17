@@ -84,6 +84,8 @@ a:hover {
 
 .container {
   margin: 0 auto !important;
+}
+.container-fluid .container{
   padding: 0px;
 }
 
