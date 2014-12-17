@@ -8,10 +8,9 @@
   $(document).ready(initialize);
 
   function initialize(){
-    // addBullet();
     $('.flexslider').flexslider({
-      controlsContainer: ".flexslider-container",
-      manualControls: ".flex-control-nav li"
+      controlsContainer : ".flexslider-container",
+      manualControls    : ".flex-control-nav li"
     });
     $('.imgLiquidFill').imgLiquid();
     $('#expander').click(collapseMap);
@@ -100,11 +99,6 @@
   }
 
   function getInfoWindow(marker){
-    // oms.addListener('click', function(marker, event) {
-    //   iw.setContent(marker.desc);
-    //   iw.open(map, marker);
-    // });
-    // google.maps.event.addListener(marker, 'click', function(){
     oms.addListener('click', function(marker, event) {
       closeInfoWindows();
       var contentString = '<div class="row tool-tip">'+
@@ -173,6 +167,9 @@
     $('.select23').select2('val', '');
     if($(this).is("select")){
       var value = $(this).find("option:selected").text();
+      var that  = $('.checkyCheck > li > a:contains(' + value + ')');
+      $('.checkyCheck').children().children().removeClass('filter-item-active');
+      $(that).addClass('filter-item-active');
     }else{
       var value = $(this).text();
       $('.select22').select2('val', value);
@@ -232,14 +229,4 @@
       }
     });
   }
-
-  // function addBullet(){
-  //   $("#foottopnav > li > a > h6").each(function(){
-  //     if (lastElement && lastElement.offset().top != $(this).offset().top) {
-  //       $(lastElement).addClass("nobullet");
-  //     }
-  //     lastElement = $(this);
-  //   }).last().addClass("nobullet");
-  // }
-
 })();
