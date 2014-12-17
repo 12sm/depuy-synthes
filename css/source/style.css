@@ -94,11 +94,11 @@ a:hover {
   margin-top: 50px;
 }
 
-.mapped.card-unit.hero-unit {
+.card-unit.hero-unit {
   margin-bottom: 40px;
 }
 
-.mapped.card-unit.hero-unit {
+.card-unit.hero-unit {
   margin-bottom: 40px;
 }
 
@@ -435,22 +435,6 @@ Home Page
   position: relative;
 }
 
-.shadowT {
-  -moz-box-shadow:    inset 1px 10px 20px -6px rgba(0,0,0,.5);
-  -webkit-box-shadow: inset 1px 10px 20px -6px rgba(0,0,0,.5);
-  box-shadow:         inset 1px 10px 20px -6px rgba(0,0,0,.5);
-  width: 100%;
-  height: 100%;
-}
-
-.shadowB {
-  -moz-box-shadow:    inset 1px -20px 20px -6px rgba(0,0,0,.5);
-  -webkit-box-shadow: inset 1px -20px 20px -6px rgba(0,0,0,.5);
-  box-shadow:         inset 1px -20px 20px -6px rgba(0,0,0,.5);
-  width: 100%;
-  height: 100%;
-}
-
 .flex-control-nav, .flex-direction-nav {
   display:none;
 }
@@ -513,7 +497,7 @@ hr {
 }
 
 .card-footer h3 {
-  font-size: 14px;
+  font-size: 12px;
   color: #FFF;
   margin: 15px 0px 15px 7px;
 }
@@ -1944,10 +1928,6 @@ textarea {
 
   .card-unit {
     margin-bottom:30px;
-  }
-
-  .shadowB.container {
-    max-width: 100%!important;
   }
 
   /*-------- SLIDER BEGIN--------*/
