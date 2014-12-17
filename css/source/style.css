@@ -783,10 +783,10 @@ p.select-from-drop-down {
   font-weight:bold;
   text-shadow: 1px 2px 1px #ffffff;
 }
-.map-filter-dropdown a.select2-choice{
+.map-filter-wrapper a.select2-choice{
   color: #0b3d60 !important;
 }
-.map-filter-dropdown {
+.map-filter-wrapper {
 position: relative;
 width: 440px;
 background: #fff;
@@ -796,14 +796,14 @@ border-radius: 7px;
 -webkit-box-shadow:  5px 10px 20px 0px rgba(0,0,0,.5);
 box-shadow:          5px 10px 20px 0px rgba(0,0,0,.5);
 }
-.map-filter-dropdown .select2-container .select2-choice span.select2-arrow{
+.map-filter-wrapper .select2-container .select2-choice span.select2-arrow{
   background: transparent !important;
 }
-.map-filter-dropdown>.select2-container {
+.map-filter-wrapper>.select2-container {
 padding: 7px;
 border-right: 1px solid #c9c9c9;
 }
-.map-filter-dropdown>.select2-container.select23 {
+.map-filter-wrapper>.select2-container.select23 {
 border-right: 0px solid #c9c9c9;
 }
 
@@ -1368,7 +1368,11 @@ div#s2id_autogen1.state-items,
 div#s2id_autogen7.hobby-items {
   background: #FFFFFF;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+div#s2id_autogen7.hobby-items {
+  border-radius: 10px 10px 10px 10px;
 }
 
 div#s2id_autogen1.state-items {
