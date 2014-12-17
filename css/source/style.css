@@ -84,6 +84,7 @@ a:hover {
 
 .container {
   margin: 0 auto !important;
+  padding: 0px;
 }
 
 .grid {
@@ -580,7 +581,7 @@ hr {
 }
 
 #card-quote {
-  height: 55px;
+  height: 65px;
   font-size: 14px;
   color: #989898;
   letter-spacing: .2px;
@@ -1405,6 +1406,7 @@ Media Queries
   }
   .container {
     min-width: 750px;
+    padding: 0 15px;
   }
 
   .grid {
