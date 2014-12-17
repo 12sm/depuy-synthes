@@ -1287,7 +1287,7 @@ div#s2id_autogen5 {
   height: 100%!important;
   border-left: none!important;
   border-radius: 0px!important;
-  background: #ECECEC!important;
+  background: transparent!important;
   background-image: none!important;
   background-image: none!important;
   background-image: none!important;
@@ -1314,6 +1314,32 @@ div#s2id_autogen5 {
 
 .mobile-filter-row {
   margin-bottom: 50px;
+}
+
+div#s2id_autogen3.joint-items,
+div#s2id_autogen1.state-items,
+div#s2id_autogen7.hobby-items {
+  background: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.map-filter-wrapper {
+  width: auto;
+  background-color: #FFF;
+  border-radius: 10px;
+  border: 1px solid #A39468;
+  -webkit-box-shadow: 11px 0 30px 0 rgba(0,0,0,.5);
+  box-shadow: 11px 0 30px 0 rgba(0,0,0,.5);
+  box-shadow: 11px 10px 30px 0 rgba(0,0,0,.5);
+  max-width: 500px;
+}
+
+span#select2-chosen-4,
+span#select2-chosen-8,
+span#select2-chosen-2 {
+  font-size: 16px;
+  color: #0b3d60;
 }
 
 /* ----- Select End --- */
