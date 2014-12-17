@@ -292,6 +292,15 @@ a#story-nav-link.main-nav-active {
   color: #fff;
 }
 
+.nav-overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(11,61,96,.5);
+  z-index: 2;
+  position: fixed;
+  top: 0px;
+}
+
 /* ==========================================================================
 Footer
 ========================================================================== */
@@ -1876,6 +1885,11 @@ hr {
 
   .navbar-header {
     float: left;
+  }
+
+  .navbar-collapse.collapse.in ul.nav.navbar-nav.navbar-right li a, .navbar-collapse.collapsing ul.nav.navbar-nav.navbar-right li a {
+    line-height: 100px;
+    border-bottom: none;
   }
 
   /*-------- NAVBAR END --------*/
