@@ -1373,10 +1373,13 @@ div#s2id_autogen7.hobby-items {
 
 div#s2id_autogen1.state-items {
   width: 210px;
+  border-right: 1px solid #ECE9E0;
+  border-radius: 10px 0px 0px 10px;
 }
 
-div#s2id_autogen1.joint-items {
-  width: 110px;
+div#s2id_autogen3.joint-items {
+  border-right: 1px solid #ECE9E0;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .map-filter-wrapper {
