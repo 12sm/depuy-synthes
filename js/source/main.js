@@ -153,6 +153,7 @@
     $('.select23').select2('val', '');
     if($(this).is("select")){
       var value = $(this).find('option:selected').text();
+      $('.checkyCheck').children().children().removeClass('filter-item-active');
     }else{
       var value = $(this).text();
     }
@@ -187,6 +188,7 @@
     $('.select22').select2('val', '');
     if($(this).is("select")){
       var value = $(this).find("option:selected").text();
+      $('.checkyCheck').children().children().removeClass('filter-item-active');
     }else{
       var value = $(this).text();
     }
