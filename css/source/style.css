@@ -755,7 +755,29 @@ p.select-from-drop-down {
   color:#0b3d60;
   font-weight:bold;
 }
-
+.map-filter-dropdown a.select2-choice{
+  color: #0b3d60 !important;
+}
+.map-filter-dropdown {
+position: relative;
+width: 440px;
+background: #fff;
+border: #c9c9c9 1px solid;
+border-radius: 7px;
+-moz-box-shadow:     5px 10px 20px 0px rgba(0,0,0,.5);
+-webkit-box-shadow:  5px 10px 20px 0px rgba(0,0,0,.5);
+box-shadow:          5px 10px 20px 0px rgba(0,0,0,.5);
+}
+.map-filter-dropdown .select2-container .select2-choice span.select2-arrow{
+  background: transparent !important;
+}
+.map-filter-dropdown>.select2-container {
+padding: 7px;
+border-right: 1px solid #c9c9c9;
+}
+.map-filter-dropdown>.select2-container.select23 {
+border-right: 0px solid #c9c9c9;
+}
 /*-------- MAP END --------*/
 
 .expand-collapse {
