@@ -315,7 +315,7 @@ Footer
   font-weight: 100;
 }
 
-#foottopnav {
+#foottopcard-quote {
   width: 100%;
 }
 
@@ -536,9 +536,10 @@ hr {
 }
 
 .card-footer h3 {
-  font-size: 12px;
+  font-size: 14px;
   color: #FFF;
   margin: 15px 0px 15px 7px;
+  width: 100px;
 }
 
 .card-footer a h5 {
@@ -584,12 +585,12 @@ hr {
 .card-unit h6 {
   margin-top: 0px;
   margin-right: -3px;
-  font-size: 10px;
+  font-size: 12px;
   color: #989898;
 }
 
 #card-quote {
-  height: 65px;
+  height: 85px;
   font-size: 14px;
   color: #989898;
   letter-spacing: .2px;
@@ -780,6 +781,7 @@ Story Index Page
 p.select-from-drop-down {
   color:#0b3d60;
   font-weight:bold;
+  text-shadow: 1px 2px 1px #ffffff;
 }
 .map-filter-dropdown a.select2-choice{
   color: #0b3d60 !important;
@@ -810,6 +812,7 @@ border-right: 0px solid #c9c9c9;
 .expand-collapse {
   bottom: 0;
   text-align: right;
+  right: 20px;
 }
 
 p.collapse-map,
@@ -817,6 +820,7 @@ p.expand-map {
   font-weight: 400;
   color: #0b3d60;
   transition:opacity .3s ease;
+  text-shadow: 1px 2px 1px #ffffff;
 }
 
 a p.collapse-map:hover,
@@ -1416,6 +1420,8 @@ Media Queries
     margin: 0 auto !important;
     min-width: 750px;
     padding: 0 15px;
+    width: auto;
+    max-width: 940px;
   }
 
   .grid {
@@ -1505,16 +1511,12 @@ Media Queries
 
 .card-unit h6 {
   margin-top: 3px;
-  font-size: 10px;
+  font-size: 12px;
   text-align: right;
 }
 
 hr {
   margin-bottom: 5px;
-}
-
-#card-quote {
-  height: 110px;
 }
 
 .card-photo {
@@ -1762,6 +1764,10 @@ hr {
     width: auto;
   }
 
+  .slides .container {
+    max-width: 890px;
+  }
+
   .grid {
     margin-top: 20px;
   }
@@ -1791,7 +1797,7 @@ hr {
   }
 
   #card-quote {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px 15px 20px 15px;
     height: 100px;
   }
@@ -1990,8 +1996,12 @@ textarea {
 @media (min-width: 1200px) {
 
   .container {
-    max-width: 1030px !important;
+    max-width: 1070px !important;
     margin: 0 auto;
+  }
+
+  .slides .container {
+    max-width: 1030px !important;
   }
 
   .grid {
@@ -2003,12 +2013,12 @@ textarea {
   }
 
   #card-quote {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px 0px 20px 0px;
   }
 
   .grid.row.ambassador-cards p#card-quote {
-    height: 140px;
+    height: 80px;
   }
 
   .grid.row.ambassador-cards .card-footer a h5 {
@@ -2017,13 +2027,12 @@ textarea {
   }
 
   .grid.row.ambassador-cards .card-footer h3 {
-    margin: 20px 15px;
-    font-size: 11px;
+    margin: 19px 15px;
+    font-size: 14px;
   }
 
   .grid.row.ambassador-cards .multiple-card-footer h3.joint {
     padding: 0;
-    margin: 14px 15px;
   }
 
   .grid.row.ambassador-cards .multiple-card-footer {
@@ -2032,6 +2041,7 @@ textarea {
 
   .card-unit h6 {
     font-size: 12px;
+    width: 90px;
   }
 
   ul.dropdown-menu.show-filter-list {
@@ -2044,8 +2054,9 @@ textarea {
   }
 
   #card-quote {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0px 15px 20px 15px;
+    height: 70px;
   }
 
   .card-unit {
@@ -2099,8 +2110,16 @@ textarea {
 @media (min-width: 1400px) {
 
   .container {
-    max-width: 1200px !important;
+    max-width: 1360px !important;
     margin: 0 auto;
+  }
+
+  .slides .container {
+    max-width: 1360px !important;
+  }
+
+  .grid.row.ambassador-cards p#card-quote {
+    height: 60px;
   }
 
 }
