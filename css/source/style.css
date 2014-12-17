@@ -1401,7 +1401,7 @@ Media Queries
     width: initial;
   }
   h6:after{
-    display: inline-block;
+    display: initial;
   }
   .container {
     min-width: 750px;
