@@ -1279,7 +1279,6 @@ span[aria-hidden="true"] {
 /* ----- Select Begin --- */
 
 div#select2-drop {
-  /*width: 160px!important;*/
   background: #ECECEC;
   border: 1px solid #cbcbcb;
   border-radius: 0px;
@@ -1357,6 +1356,10 @@ div#s2id_autogen7.hobby-items {
 
 div#s2id_autogen1.state-items {
   width: 210px;
+}
+
+div#s2id_autogen1.joint-items {
+  width: 110px;
 }
 
 .map-filter-wrapper {
