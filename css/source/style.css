@@ -213,7 +213,7 @@ form.navbar-form .form-group.input-group {
 }
 
 .navbar-toggle {
-  padding: 12px 0px !important;
+  padding: 12px 15px !important;
   margin: 1px!important;
 }
 
@@ -385,6 +385,7 @@ Home Page
   height: 56px;
   background-repeat: no-repeat;
   width: 26px;
+  right:30px;
 }
 
 .flex-direction-nav li a.prev {
@@ -393,6 +394,7 @@ Home Page
   height: 56px;
   background-repeat: no-repeat;
   width: 26px;
+  left:30px;
 }
 .flex-control-nav li{
   list-style: none;
@@ -424,8 +426,8 @@ Home Page
 }
 
 .slide_text {
-  width: 100%;
-  padding: 0px 60px 0px 20px;
+  width: 280px;
+  padding: 0px 15px;
 }
 
 .inner-shadow {
@@ -1063,9 +1065,9 @@ Form Page
 
 .top-disclaimer-text p {
   padding-top: 20px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 100;
-  line-height: 1.6;
+  line-height: 1.4;
   margin-bottom: 30px;
 }
 
@@ -1115,6 +1117,9 @@ img.activity-icon.swimming-icon {
 .list-of-activity-items p {
   margin-bottom: 20px;
   font-size: 14px;
+  width: 50%;
+  display: block;
+  float: left;
 }
 
 form p.blue-accent {
@@ -1356,6 +1361,10 @@ Media Queries
   .navbar-nav > li {
     float: none;
   }
+
+  .navbar-header {
+    float: none;
+  }
   /*-------- NAVBAR END --------*/
 
 
@@ -1387,9 +1396,8 @@ Media Queries
   }
 
   .slide_text {
-    width: 60%;
-    padding: 0px 80px 0px 135px;
-    padding-top: 70px;
+    width: 510px;
+    padding: 70px 80px 0px 50px;
     margin: 0!Important;
   }
 
@@ -1486,7 +1494,7 @@ hr {
   }
 
   .story-unit.hero-unit ul {
-    font-size: 16px;
+    font-size: 13px;
     padding-top: 0px;
     max-height: 200px;
     overflow: scroll;
@@ -1524,7 +1532,7 @@ hr {
   span.no-file-chosen {
     padding-left: 265px;
     color: #808080;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 100;
   }
 
@@ -1665,6 +1673,12 @@ hr {
 /* Medium devices 992px and up */
 @media (min-width: 992px) {
 
+  .container {
+    max-width: 890px;
+    min-width: 750px;
+    width: auto;
+  }
+
   .grid {
     margin-top: 20px;
   }
@@ -1766,19 +1780,15 @@ hr {
     line-height: 100px;
   }
 
-  form.navbar-form .form-group.input-group {
-    width: 140px;
-  }
-
   .shadow-top {padding-top:100px;}
 
   .navbar-collapse {
-    background:none;
+    background: none;
     padding: 0px;
     margin: 0px;
     border: none!important;
     height: auto;
-    width: 100%;
+    width: 65%;
     position: relative;
     top: 0px;
   }
@@ -1789,6 +1799,10 @@ hr {
   }
 
   .navbar-nav > li {
+    float: left;
+  }
+
+  .navbar-header {
     float: left;
   }
 
@@ -1815,9 +1829,8 @@ hr {
   }
 
   .slide_text {
-    width: 60%;
-    padding: 0px 80px 0px 130px;
-    padding-top: 70px;
+    width: 600px;
+    padding: 70px 80px 0px 0px;
     margin: 0!important;
   }
 
@@ -1863,7 +1876,7 @@ blockquote {
 }
 
 span.no-file-chosen {
-  padding-left: 20px;
+  padding-left: 0px;
   height: 44px;
   padding-top: 12px;
 }
@@ -1891,7 +1904,7 @@ textarea {
 @media (min-width: 1200px) {
 
   .container {
-    max-width: 1200px !important;
+    max-width: 1030px !important;
     margin: 0 auto;
   }
 
@@ -1947,9 +1960,8 @@ textarea {
   }
 
   .slide_text {
-    width: 55%;
-    padding-top: 100px;
-    padding: 100px 0px 0px 80px;
+    width: 600px;
+    padding: 100px 0px 0px 0px;
     margin: 0!important;
   }
 
@@ -1971,6 +1983,15 @@ textarea {
 
   span.no-file-chosen {
     padding-left: 0px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .container {
+    max-width: 1200px !important;
+    margin: 0 auto;
   }
 
 }
