@@ -768,6 +768,7 @@ border-right: 1px solid #c9c9c9;
 .map-filter-dropdown>.select2-container.select23 {
 border-right: 0px solid #c9c9c9;
 }
+
 /*-------- MAP END --------*/
 
 .expand-collapse {
@@ -987,8 +988,11 @@ img.toop-tip-arrow {
   bottom: -10px;
   max-width:300px;
 }
-
-.gm-style .gm-style-iw {
+.gm-style-iw + div {
+  right: 7px !important;
+  top: 35px !important;
+}
+.gm-style .gm-style-iw{
   font-weight: 300;
   font-size: 13px;
   background-color: #FFF!important;
@@ -996,7 +1000,7 @@ img.toop-tip-arrow {
   box-shadow: none!important;
   height: 90px!important;
   margin-top: 30px;
-  max-width: 290px;
+  width: 290px;
 }
 
 .gm-style-iw::after {
@@ -1355,6 +1359,9 @@ Media Queries
 
 /* Small devices 768px and up */
 @media only screen and (min-width: 768px) {
+  .map-filter{
+    width: initial;
+  }
   h6:after{
     display: inline-block;
   }
