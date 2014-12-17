@@ -451,6 +451,33 @@ Home Page
   opacity: .6;
   cursor: initial;
 }
+
+.shadow-top {
+  position: absolute;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  top: -2px;
+  height: 40px;
+  opacity: 0.4;
+  width: 100%;
+  background: url("../../images/shadow-top.png");
+  background-repeat: repeat-x;
+}
+
+.shadow-bottom {
+  position: absolute;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  bottom: 0px;
+  height: 40px;
+  opacity: 0.4;
+  width: 100%;
+  background: url("../../images/shadow-bottom.png");
+  background-repeat: repeat-x;
+}
+
 /*-------- SLIDER END--------*/
 
 
@@ -1806,8 +1833,6 @@ hr {
   ul.nav.navbar-nav.navbar-right li form {
     line-height: 100px;
   }
-
-  .shadow-top {padding-top:100px;}
 
   .navbar-collapse {
     background: none;
