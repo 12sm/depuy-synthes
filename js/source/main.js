@@ -20,6 +20,7 @@
     $('.state-items > li').click(filterStates);
     $('.joint-items > li').click(filterJoints);
     $('.hobby-items > li').click(filterHobbies);
+    $('.select24').select2({placeholder: "States:"});
     $('.select21').select2({placeholder: "States:"});
     $('.select22').select2({placeholder: "Joint Replacement:"});
     $('.select23').select2({placeholder: "Activity/Hobby:"});
@@ -134,7 +135,7 @@
 
   function collapseMap(){
     if($('#map-canvas').css('height') == '600px'){
-      $('#map-canvas').css('height', '120px');
+      $('#map-canvas').css('height', '150px');
       $('#collapseText').text('Expand Map ');
       var fontArrow = $('<i>');
       fontArrow.addClass('fa fa-long-arrow-down');
@@ -206,11 +207,7 @@
         showCards(value, str);
       }
     }
-    if ( value == 'All'
-      || value == 'All  \u2713'
-      || value == 'States'
-      || value == 'Joint Replacement'
-      || value == 'Activity/Hobby'){
+    if ( value == 'All' || value == 'All  \u2713'){
       markers(map);
       showCards(value, str);
     }
@@ -223,10 +220,7 @@
       if ( value == $(that).find(str).attr('value')
         || value == $(that).find(str).text()
         || value == 'All'
-        || value == 'All  \u2713'
-        || value == 'States'
-        || value == 'Joint Replacement'
-        || value == 'Activity/Hobby'){
+        || value == 'All  \u2713'){
         $(that).removeClass('hidden');
       }
     });
