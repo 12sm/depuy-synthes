@@ -227,15 +227,17 @@ form.navbar-form .form-group.input-group {
   height: 100%;
 }
 
-.navbar-collapse.collapse.in {
+.navbar-collapse {
   background: rgba(11,61,96,.5);
   text-align: center;
-  padding: 0;
-  margin-top: 2px;
+  padding: 0px;
+  margin: 0px;
   border: none;
   border-top: 1px solid #0B3D60!important;
-  padding-bottom: 300%;
-  height: 111px!important;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 52px;
 }
 
 a#ambassadors-nav-link, a#story-nav-link {
@@ -259,8 +261,9 @@ a#ambassadors-nav-link, a#story-nav-link {
   background: none;
 }
 
-.navbar-collapse.collapse.in .navbar-nav {
+.navbar-collapse .navbar-nav {
   margin: 0px auto;
+  width: 100%;
 }
 
 .navbar-collapse.collapse.in ul.nav.navbar-nav.navbar-right li a, .navbar-collapse.collapsing ul.nav.navbar-nav.navbar-right li a  {
@@ -1365,7 +1368,11 @@ Media Queries
     left: 0px;
   }
 
-
+  /*-------- NAVBAR BEGIN --------*/
+  .navbar-nav > li {
+    float: none;
+  }
+  /*-------- NAVBAR END --------*/
 
 
 
@@ -1759,10 +1766,6 @@ hr {
     line-height: 100px;
   }
 
-  .navbar-collapse.collapse {
-    width: 70%;
-  }
-
   #nav-logo {
     background-size: contain;
     height: 40px;
@@ -1784,6 +1787,27 @@ hr {
   }
 
   .shadow-top {padding-top:100px;}
+
+  .navbar-collapse {
+    background:none;
+    padding: 0px;
+    margin: 0px;
+    border: none!important;
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 0px;
+  }
+
+  .navbar-collapse .navbar-nav {
+    margin: 0px auto;
+    width: auto;
+  }
+
+  .navbar-nav > li {
+    float: left;
+  }
+
   /*-------- NAVBAR END --------*/
 
 
