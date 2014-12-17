@@ -1279,7 +1279,7 @@ span[aria-hidden="true"] {
 /* ----- Select Begin --- */
 
 div#select2-drop {
-  width: 160px!important;
+  /*width: 160px!important;*/
   background: #ECECEC;
   border: 1px solid #cbcbcb;
   border-radius: 0px;
@@ -1291,7 +1291,7 @@ div#select2-drop {
 
 div#s2id_autogen5 {
   background: #ECECEC;
-  width: 160px;
+  width: 100%;
   border: 1px solid #cbcbcb;
   height: 34px;
 }
@@ -1355,6 +1355,10 @@ div#s2id_autogen7.hobby-items {
   border-radius: 10px;
 }
 
+div#s2id_autogen1.state-items {
+  width: 210px;
+}
+
 .map-filter-wrapper {
   width: auto;
   background-color: #FFF;
@@ -1363,7 +1367,7 @@ div#s2id_autogen7.hobby-items {
   -webkit-box-shadow: 11px 0 30px 0 rgba(0,0,0,.5);
   box-shadow: 11px 0 30px 0 rgba(0,0,0,.5);
   box-shadow: 11px 10px 30px 0 rgba(0,0,0,.5);
-  max-width: 500px;
+  max-width: 600px;
 }
 
 span#select2-chosen-4,
