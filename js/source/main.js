@@ -34,7 +34,7 @@
       center       : {lat: 39.489, lng: -97.336}
     };
     map            = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-    oms            = new OverlappingMarkerSpiderfier(map, {markersWontMove: true, markersWontHide: true, keepSpiderfied: true});
+    oms            = new OverlappingMarkerSpiderfier(map, {markersWontMove: true, markersWontHide: true, keepSpiderfied: true, legWeight: '1'});
     getInfo();
   }
 
@@ -69,6 +69,7 @@
       map      : map,
       position : result.geometry.location,
       icon     : dot,
+      state    : story[1],
       photo    : story[2],
       name     : story[3],
       city     : story[4],
@@ -128,9 +129,45 @@
   }
 
   function markers(set){
-    for (var i = 0; i < allMarkers.length; i++){
+    for(var i = 0; i < allMarkers.length; i++){
       allMarkers[i].setMap(set);
     }
+  }
+
+  function dropStates(value){
+    var marks = [];
+    var arr = allMarkers.map(function(mark){
+      if(mark.state != value){
+        marks.push(mark);
+      }else{
+        mark.setMap(null);
+      }
+    });
+    allMarkers = marks;
+  }
+
+  function dropJoints(value){
+    var marks = [];
+    var arr = allMarkers.map(function(mark){
+      if(mark.joint != value){
+        marks.push(mark);
+      }else{
+        mark.setMap(null);
+      }
+    });
+    allMarkers = marks;
+  }
+
+  function dropHobbies(value){
+    var marks = [];
+    var arr = allMarkers.map(function(mark){
+      if(mark.hobby != value){
+        marks.push(mark);
+      }else{
+        mark.setMap(null);
+      }
+    });
+    allMarkers = marks;
   }
 
   function collapseMap(){
@@ -152,14 +189,11 @@
   function filterStates(e){
     $('.select22').select2('val', '');
     $('.select23').select2('val', '');
-    if($(this).is("select")){
-      var value = $(this).find('option:selected').text();
-      $('.checkyCheck').children().children().removeClass('filter-item-active');
-    }else{
-      var value = $(this).text();
-    }
+    var value = $(this).find('option:selected').text();
+    $('.checkyCheck').children().children().removeClass('filter-item-active');
     var str = '.state';
     var num = 1;
+    dropStates(value);
     filter(value, str, num);
     e.preventDefault();
   }
@@ -180,6 +214,7 @@
     }
     var str = '.joint';
     var num = 5;
+    dropJoints(value);
     filter(value, str, num);
     e.preventDefault();
   }
@@ -187,19 +222,17 @@
   function filterHobbies(e){
     $('.select21').select2('val', '');
     $('.select22').select2('val', '');
-    if($(this).is("select")){
-      var value = $(this).find("option:selected").text();
-      $('.checkyCheck').children().children().removeClass('filter-item-active');
-    }else{
-      var value = $(this).text();
-    }
+    var value = $(this).find("option:selected").text();
+    $('.checkyCheck').children().children().removeClass('filter-item-active');
     var str = '.hobby';
     var num = 6;
+    dropHobbies(value);
     filter(value, str, num);
     e.preventDefault();
   }
 
   function filter(value, str, num){
+    oms.unspiderfy();
     markers(null);
     for(var i = 0; i < stories.length; i++){
       if(stories[i][num] == value){
