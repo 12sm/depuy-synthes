@@ -12,6 +12,7 @@
       controlsContainer : ".flexslider-container",
       manualControls    : ".flex-control-nav li"
     });
+    
     $('.imgLiquidFill').imgLiquid();
     $('#expander').click(collapseMap);
     $('.state-items').change(filterStates);
