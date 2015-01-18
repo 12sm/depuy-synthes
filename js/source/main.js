@@ -4,7 +4,7 @@
   var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
   var infowindows = [], allMarkers = [], stories = [], filtered = [], map, oms, geocoder, lastElement = false;
 
-  window.onload = loadMap;
+  //window.onload = loadMap;
   $(document).ready(initialize);
 
   function initialize(){
@@ -25,6 +25,7 @@
     $('.select21').select2({placeholder: "States:"});
     $('.select22').select2({placeholder: "Joint Replacement:"});
     $('.select23').select2({placeholder: "Activity/Hobby:"});
+  
   }
 
   function loadMap(){
@@ -137,7 +138,7 @@
 
   function dropStates(value){
     var marks = [];
-    var arr = allMarkers.map(function(mark){
+    var arr = jQuery.map(allMarkers, function(mark){
       if(mark.state != value){
         marks.push(mark);
       }else{
@@ -147,9 +148,9 @@
     allMarkers = marks;
   }
 
-  function dropJoints(value){
+   function dropJoints(value){
     var marks = [];
-    var arr = allMarkers.map(function(mark){
+    var arr = jQuery.map(allMarkers, function(mark){
       if(mark.joint != value){
         marks.push(mark);
       }else{
@@ -161,7 +162,7 @@
 
   function dropHobbies(value){
     var marks = [];
-    var arr = allMarkers.map(function(mark){
+    var arr = jQuery.map(allMarkers, function(mark){
       if(mark.hobby != value){
         marks.push(mark);
       }else{

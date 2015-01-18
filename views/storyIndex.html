@@ -10,7 +10,11 @@
   <link rel="stylesheet" href="../css/vendor/select2.css">
   <link rel="stylesheet" href="../css/vendor/select2-bootstrap.css">
   <link rel="stylesheet" href="../css/vendor/font-awesome.min.css">
-  <script src="../js/vendor/jquery.js"></script>
+  <!--[if gt IE 8]><!--> <script src="../js/vendor/jquery.js"></script> <!--<![endif]-->
+    <!--[if lte IE 8]>
+      <script src='../js/vendor/jquery-1.11.2.min.js'></script>
+      <link rel="stylesheet" href="../css/source/ie8.css">
+    <![endif]-->
   <script src="../js/vendor/modernizr.js"></script>
   <script src="../js/vendor/respond.min.js"></script>
   <script src="../js/vendor/select2.min.js"></script>
