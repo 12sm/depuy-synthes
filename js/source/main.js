@@ -4,7 +4,7 @@
   var mapKey = 'AIzaSyCYPGCX6jqcCeTVYyiPZ8Epsh6HqP3j_nk';
   var infowindows = [], allMarkers = [], stories = [], filtered = [], map, oms, geocoder, lastElement = false;
 
-  //window.onload = loadMap;
+  window.onload = loadMap;
   $(document).ready(initialize);
 
   function initialize(){
@@ -12,7 +12,6 @@
       controlsContainer : ".flexslider-container",
       manualControls    : ".flex-control-nav li"
     });
-    
     $('.imgLiquidFill').imgLiquid();
     $('#expander').click(collapseMap);
     $('.state-items').change(filterStates);
@@ -25,7 +24,6 @@
     $('.select21').select2({placeholder: "States:"});
     $('.select22').select2({placeholder: "Joint Replacement:"});
     $('.select23').select2({placeholder: "Activity/Hobby:"});
-  
   }
 
   function loadMap(){
@@ -127,6 +125,12 @@
   function closeInfoWindows(){
     for(var i = 0; i < infowindows.length; i++){
       infowindows[i].close();
+    }
+  }
+
+  function markers(set){
+    for(var i = 0; i < allMarkers.length; i++){
+      allMarkers[i].setMap(set);
     }
   }
 

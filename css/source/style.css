@@ -101,10 +101,7 @@ a:hover {
 
 .card-unit.hero-unit {
   margin-bottom: 40px;
-}
-
-.card-unit.hero-unit {
-  margin-bottom: 40px;
+  display: inline-block;
 }
 
 .filter-row-colorful {
