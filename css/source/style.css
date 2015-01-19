@@ -69,6 +69,7 @@ a:hover {
   padding: 10px 15px;
   opacity:1;
   transition: opacity .3s ease;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .btn-primary:after {
@@ -192,6 +193,7 @@ a#story-nav-link:hover {
   border: none!important;
   box-shadow: none!important;
   font-size: 16px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 span.input-group-addon {
@@ -200,6 +202,7 @@ span.input-group-addon {
   color: #BEBEBE;
   font-size: 18px;
   padding-right: 0px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 form.navbar-form .form-group.input-group {
@@ -350,6 +353,7 @@ ul#foottopnav li {
   margin: 8px 3px;
   border-radius: 2px;
   transition: background-color .1s ease;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .bot:hover {
@@ -516,6 +520,7 @@ hr {
   top: -30px;
   margin-bottom: -56px;
   z-index: 2;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .card-line {
@@ -616,6 +621,7 @@ hr {
   padding: 13px 15px;
   opacity: 1;
   transition: opacity .3s ease;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .ambassamore > a:after {
@@ -639,6 +645,7 @@ Story Show Page
   box-shadow: 0px 0px 15px 3px rgba(0,0,0,.05);
   margin-top:20px;
   margin-bottom: 20px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .story-unit.hero-unit {
@@ -651,6 +658,7 @@ Story Show Page
   margin: 0px auto 40px auto;
   -webkit-box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
   box-shadow: 0 7px 5px 0 rgba(0,0,0,.05);
+  behavior: url(../../pie/PIE.htc);
 }
 
 .hero-unit > div {
@@ -799,6 +807,7 @@ border-radius: 7px;
 -moz-box-shadow:     5px 10px 20px 0px rgba(0,0,0,.5);
 -webkit-box-shadow:  5px 10px 20px 0px rgba(0,0,0,.5);
 box-shadow:          5px 10px 20px 0px rgba(0,0,0,.5);
+behavior: url(../../pie/PIE.htc);
 }
 .map-filter-wrapper .select2-container .select2-choice span.select2-arrow{
   background: transparent !important;
@@ -919,6 +928,7 @@ button#dropdownMenu-show {
   border: 1px solid #cbcbcb;
   border-radius: 0px;
   background: #ECECEC;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .dropdown-menu {
@@ -933,6 +943,7 @@ button#dropdownMenu-show {
   -webkit-box-shadow: none;
   box-shadow: none;
   min-width:0px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .dropdown-menu li a {
@@ -956,6 +967,7 @@ img.dropdown-arrow {
   border: 1px solid #a39468;
   border-radius:5px;
   box-shadow: 8px 11px 22px 0 rgba(0,0,0,.3);
+  behavior: url(../../pie/PIE.htc);
 }
 
 .map-filter img.dropdown-arrow {
@@ -979,6 +991,7 @@ img.dropdown-arrow {
 img.marker-photo {
   border-radius: 100px;
   height: 70px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 h2.marker-name {
@@ -1031,6 +1044,7 @@ img.toop-tip-arrow {
   border-radius: 30px;
   bottom: -10px;
   max-width:300px;
+  behavior: url(../../pie/PIE.htc);
 }
 .gm-style-iw + div {
   right: 7px !important;
@@ -1045,6 +1059,7 @@ img.toop-tip-arrow {
   height: 90px!important;
   margin-top: 30px;
   width: 290px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .gm-style-iw::after {
@@ -1129,6 +1144,7 @@ Form Page
   border-radius: 0px;
   margin-bottom: 10px;
   box-shadow: none;
+  behavior: url(../../pie/PIE.htc);
 }
 
 form.form-inline button.btn.btn-default.dropdown-toggle {
@@ -1138,6 +1154,7 @@ form.form-inline button.btn.btn-default.dropdown-toggle {
   display: inline-block;
   padding: 10px;
   text-align: left;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .btn-group.state-dropdown, .btn-group.add-a-photo {
@@ -1307,6 +1324,7 @@ div#select2-drop {
   font-size: 14px;
   color: #555555;
   padding-top: 10px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 div#s2id_autogen5 {
@@ -1325,6 +1343,7 @@ div#s2id_autogen5 {
   border-radius: 0px!important;
   background-color: transparent!important;
   background-image: none!important;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .select2-container .select2-choice .select2-arrow b {
@@ -1344,6 +1363,7 @@ div#s2id_autogen5 {
   background-image: none!important;
   filter: none!important;
   background-image: none!important;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .select2-results .select2-highlighted {
@@ -1373,21 +1393,25 @@ div#s2id_autogen7.hobby-items {
   background: #FFFFFF;
   padding: 10px;
   border-radius: 10px 0px 0px 10px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 div#s2id_autogen7.hobby-items {
   border-radius: 10px 10px 10px 10px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 div#s2id_autogen1.state-items {
   width: 210px;
   border-right: 1px solid #ECE9E0;
   border-radius: 10px 0px 0px 10px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 div#s2id_autogen3.joint-items {
   border-right: 1px solid #ECE9E0;
   border-radius: 10px 0px 0px 10px;
+behavior: url(../../pie/PIE.htc);
 }
 
 .map-filter-wrapper {
@@ -1399,6 +1423,7 @@ div#s2id_autogen3.joint-items {
   box-shadow: 11px 0 30px 0 rgba(0,0,0,.5);
   box-shadow: 11px 10px 30px 0 rgba(0,0,0,.5);
   max-width: 600px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 span#select2-chosen-4,
@@ -1413,6 +1438,7 @@ span#select2-chosen-2 {
   border-radius: 0px;
   width: 100%;
   height: 45px;
+  behavior: url(../../pie/PIE.htc);
 }
 
 .state-wrapper .btn-default .select2-choice {
@@ -1606,7 +1632,7 @@ hr {
     font-size: 13px;
     padding-top: 0px;
     max-height: 200px;
-    overflow: scroll;
+    overflow: auto;
   }
 
   /*-------- Story Show End --------*/
