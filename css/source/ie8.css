@@ -29,3 +29,11 @@
 .card-footer a h5 {
   color: rgb(255,255,255);
 }
+.form-group.input-group {
+border-radius: 50px;
+border: none;
+color: #BEBEBE;
+font-size: 18px;
+padding-right: 0px;
+behavior: url(../../pie/PIE.htc);
+}
