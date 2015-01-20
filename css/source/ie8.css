@@ -31,10 +31,12 @@
 }
 
 .form-group.input-group {
+background: #EDEDED;
+inset: 0px;
 border-radius: 50px;
-border: none;
-color: #BEBEBE;
-font-size: 18px;
-padding-right: 0px;
+height: 45px;
+border: 1px transparent !important;
+box-shadow: none!important;
+font-size: 16px;
 behavior: url(../../pie/PIE.htc);
 }
